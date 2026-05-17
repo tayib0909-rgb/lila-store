@@ -1,0 +1,51 @@
+{
+  "current": {
+    "color_primary": "#C4956A",
+    "color_primary_dark": "#A67B52",
+    "color_secondary": "#2D2D2D",
+    "color_accent": "#E8C9A6",
+    "color_rose": "#D4A0A0",
+    "color_cream": "#FFF8F2",
+    "color_cream_dark": "#FDF0E2",
+    "color_text": "#1A1A1A",
+    "color_text_light": "#666666",
+    "color_background": "#FFFCF9",
+    "color_sale": "#B76E79",
+    "color_button_text": "#FFFFFF",
+    "color_button_bg": "#C4956A",
+    "color_button_hover": "#A67B52",
+    "font_heading_family": "'Playfair Display', Georgia, serif",
+    "font_body_family": "'Montserrat', 'Segoe UI', sans-serif",
+    "font_heading_arabic": "'Tajawal', 'Noto Naskh Arabic', serif",
+    "font_body_arabic": "'Tajawal', 'Noto Naskh Arabic', sans-serif",
+    "show_whatsapp": true,
+    "whatsapp_number": "212600000000",
+    "show_sticky_atc": true,
+    "favicon": null
+  },
+  "presets": {
+    "Default": {
+      "color_primary": "#C4956A",
+      "color_primary_dark": "#A67B52",
+      "color_secondary": "#2D2D2D",
+      "color_accent": "#E8C9A6",
+      "color_rose": "#D4A0A0",
+      "color_cream": "#FFF8F2",
+      "color_cream_dark": "#FDF0E2",
+      "color_text": "#1A1A1A",
+      "color_text_light": "#666666",
+      "color_background": "#FFFCF9",
+      "color_sale": "#B76E79",
+      "color_button_text": "#FFFFFF",
+      "color_button_bg": "#C4956A",
+      "color_button_hover": "#A67B52",
+      "font_heading_family": "'Playfair Display', Georgia, serif",
+      "font_body_family": "'Montserrat', 'Segoe UI', sans-serif",
+      "font_heading_arabic": "'Tajawal', 'Noto Naskh Arabic', serif",
+      "font_body_arabic": "'Tajawal', 'Noto Naskh Arabic', sans-serif",
+      "show_whatsapp": true,
+      "whatsapp_number": "212600000000",
+      "show_sticky_atc": true
+    }
+  }
+}
