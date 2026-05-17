@@ -1,0 +1,40 @@
+<section class="section" id="faq">
+  <div class="page-width">
+    <div class="section-header">
+      <h2>{{ 'sections.faq.title' | t }}</h2>
+      <p>{{ 'sections.faq.subtitle' | t }}</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="faq-list">
+      {% for i in (1..8) %}
+        {% assign q_key = 'q' | append: i %}
+        {% assign a_key = 'a' | append: i %}
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>{{ 'sections.faq.' | append: q_key | t }}</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"/>
+              <line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <p>{{ 'sections.faq.' | append: a_key | t }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [],
+  "presets": [
+    {
+      "name": "FAQ"
+    }
+  ]
+}
+{% endschema %}

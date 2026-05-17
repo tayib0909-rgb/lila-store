@@ -1,0 +1,66 @@
+{
+  "sections": {
+    "announcement": {
+      "type": "announcement-bar",
+      "settings": {}
+    },
+    "header": {
+      "type": "header",
+      "settings": {}
+    },
+    "hero": {
+      "type": "hero-banner",
+      "settings": {}
+    },
+    "problem": {
+      "type": "problem-solution",
+      "settings": {}
+    },
+    "benefits": {
+      "type": "benefits-grid",
+      "settings": {}
+    },
+    "before_after": {
+      "type": "before-after",
+      "settings": {}
+    },
+    "product": {
+      "type": "product-showcase",
+      "settings": {}
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {}
+    },
+    "instagram": {
+      "type": "instagram-feed",
+      "settings": {}
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {}
+    },
+    "whatsapp": {
+      "type": "whatsapp-button",
+      "settings": {}
+    }
+  },
+  "order": [
+    "announcement",
+    "header",
+    "hero",
+    "problem",
+    "benefits",
+    "before_after",
+    "product",
+    "testimonials",
+    "faq",
+    "instagram",
+    "footer",
+    "whatsapp"
+  ]
+}

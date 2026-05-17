@@ -1,0 +1,56 @@
+<section class="section section-cream-dark" id="results">
+  <div class="page-width">
+    <div class="section-header">
+      <h2>{{ 'sections.before_after.title' | t }}</h2>
+      <p>{{ 'sections.before_after.subtitle' | t }}</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="before-after">
+      <div>
+        <div class="ba-image-container">
+          <div style="background: #E8D5C4; width: 100%; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; color: var(--color-text-light); font-family: var(--font-heading); font-size: 18px;">
+            {{ 'sections.before_after.placeholder_before' | t }}
+          </div>
+          <div class="ba-label">{{ 'sections.before_after.before' | t }}</div>
+        </div>
+      </div>
+      <div>
+        <h3>{{ 'sections.before_after.result_title' | t }}</h3>
+        <p style="color: var(--color-text-light); line-height: 1.7; margin-bottom: 24px;">
+          {{ 'sections.before_after.result_text' | t }}
+        </p>
+        <div class="ba-results">
+          <div class="ba-stat">
+            <span class="ba-stat-number">-87%</span>
+            <span class="ba-stat-label">{{ 'sections.before_after.stat1' | t }}</span>
+          </div>
+          <div class="ba-stat">
+            <span class="ba-stat-number">+94%</span>
+            <span class="ba-stat-label">{{ 'sections.before_after.stat2' | t }}</span>
+          </div>
+          <div class="ba-stat">
+            <span class="ba-stat-number">2x</span>
+            <span class="ba-stat-label">{{ 'sections.before_after.stat3' | t }}</span>
+          </div>
+          <div class="ba-stat">
+            <span class="ba-stat-number">100%</span>
+            <span class="ba-stat-label">{{ 'sections.before_after.stat4' | t }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Before / After",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Before / After"
+    }
+  ]
+}
+{% endschema %}

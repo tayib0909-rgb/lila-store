@@ -1,0 +1,63 @@
+<header class="site-header" role="banner">
+  <div class="page-width header-inner">
+    <div class="header-logo">
+      <a href="{{ routes.root_url }}">
+        LILA
+        <span class="arabic">ليلى</span>
+      </a>
+    </div>
+
+    <nav class="header-nav" role="navigation">
+      <a href="#product">{{ 'sections.header.shop' | t }}</a>
+      <a href="#benefits">{{ 'sections.header.benefits' | t }}</a>
+      <a href="#reviews">{{ 'sections.header.reviews' | t }}</a>
+      <a href="#faq">{{ 'sections.header.faq' | t }}</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="{{ routes.cart_url }}" class="header-icon" aria-label="{{ 'sections.header.cart' | t }}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 01-8 0"/>
+        </svg>
+        <span class="cart-count">{{ cart.item_count }}</span>
+      </a>
+
+      <button class="mobile-menu-btn" aria-label="{{ 'sections.header.menu' | t }}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <div class="header-logo">LILA <span class="arabic">ليلى</span></div>
+    <button class="mobile-menu-close" aria-label="{{ 'sections.header.close' | t }}">&times;</button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="#product">{{ 'sections.header.shop' | t }}</a>
+    <a href="#benefits">{{ 'sections.header.benefits' | t }}</a>
+    <a href="#reviews">{{ 'sections.header.reviews' | t }}</a>
+    <a href="#faq">{{ 'sections.header.faq' | t }}</a>
+    <a href="{{ routes.cart_url }}">{{ 'sections.header.cart' | t }}</a>
+  </nav>
+</div>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Header"
+    }
+  ]
+}
+{% endschema %}

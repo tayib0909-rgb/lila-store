@@ -1,0 +1,53 @@
+<section class="section" id="instagram">
+  <div class="page-width">
+    <div class="section-header">
+      <h2>{{ 'sections.instagram.title' | t }}</h2>
+      <p>{{ 'sections.instagram.subtitle' | t }}</p>
+      <div class="section-divider"></div>
+    </div>
+  </div>
+
+  <div class="instagram-grid">
+    {% for i in (1..8) %}
+      <div class="instagram-item">
+        <div style="background: {{ section.settings.placeholder_color | default: '#FDF0E2' }}; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: var(--color-primary); font-size: 14px; font-family: var(--font-heading);">
+          @lila.ma
+        </div>
+        <div class="instagram-overlay">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div style="text-align: center; margin-top: 24px;">
+    <a href="{{ section.settings.instagram_url | default: 'https://instagram.com/lila.ma' }}" target="_blank" rel="noopener" class="btn btn-outline-gold">
+      {{ 'sections.instagram.cta' | t }}
+    </a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Instagram Feed",
+  "settings": [
+    {
+      "type": "text",
+      "id": "instagram_url",
+      "label": "Instagram URL",
+      "default": "https://instagram.com/lila.ma"
+    },
+    {
+      "type": "color",
+      "id": "placeholder_color",
+      "label": "Placeholder Color",
+      "default": "#FDF0E2"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Instagram Feed"
+    }
+  ]
+}
+{% endschema %}

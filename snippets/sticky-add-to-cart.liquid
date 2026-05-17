@@ -1,0 +1,13 @@
+<div class="sticky-atc" id="StickyATC">
+  <div class="sticky-atc-inner">
+    <div class="sticky-atc-info">
+      <div class="sticky-atc-title">{{ product.title }}</div>
+      <div class="sticky-atc-price" id="StickyPrice">
+        {{ product.selected_or_first_available_variant.price | money }}
+      </div>
+    </div>
+    <button class="sticky-atc-btn" onclick="document.getElementById('AddToCartBtn').click()">
+      {{ 'snippets.sticky_atc.cta' | t }}
+    </button>
+  </div>
+</div>

@@ -1,0 +1,193 @@
+{
+  "en": {
+    "general": {
+      "meta": {
+        "tags": "Tags",
+        "page": "Page"
+      }
+    },
+    "sections": {
+      "header": {
+        "shop": "Mkhadda L'7arer",
+        "benefits": "L'fawa2ed",
+        "reviews": "Témoignages",
+        "faq": "As2ila",
+        "cart": "Cart",
+        "menu": "Menu",
+        "close": "Close"
+      },
+      "hero": {
+        "subtitle": "LILA — مخدة الحرير الفاخرة",
+        "title": "Nharek Katchna B'<span class=\"emphasis\">L'7arer</span>",
+        "text": "La première مخدة حرير فاخرة في المغرب. استيقظي وجمالك يتألق — صباح بدون تجاعيد، شعر بدون تشابك.",
+        "cta": "N9i Mkhaddtek Daba",
+        "watch": "Choufi L'Video",
+        "badge": "7el 100% Tabi3i — Rasmek M7foud",
+        "offer": "🔥 <strong>3ard Khas:</strong> شراء 2 واحصل على التوصيل مجانا + هدية مجانية — <a href=\"#product\">Serti Daba</a>"
+      },
+      "problem": {
+        "title": "Wach Hadchi Katchdi Biya?",
+        "subtitle": "Mochkilat Koll Mra Kat'9adda F'So9",
+        "problem_title": "Sba7ek Kat'bd Achi <span style=\"color: var(--color-primary);\">Haka</span>?",
+        "p1_title": "Sba7ek Kat'bd B'L'3qada",
+        "p1_desc": "Katchdi 30 d9i9a f'tsbi7 7it l'mkhadda kat'khle9 lik l'3qada f'wjhek o f'sh3rek.",
+        "p2_title": "S'hrek Katban Fraji W M'fker",
+        "p2_desc": "Mkhadda l'3adiya kat'kerker f'sh3rek o katkhlih yban khashn o bla ndama.",
+        "p3_title": "L'Hbib Dyal L'Boudour Sa7a Fik",
+        "p3_desc": "Ch'ta l'3adi kat'jem3 l'wssakh o ziti, 3lach kat9assar f'9owet l'7boba o l'Boutoula.",
+        "p4_title": "Nti Khasrna F'L'hedra Dyal L'Brine",
+        "p4_desc": "Mkhadda l'3adiya ma7tafitch l'brine, rah katkhli 3la wjhek 3lmat l'9iyada o sh'kho5.",
+        "solution_title": "L'7el Jebdelna LILA",
+        "s1_title": "Nhar Jdid — BLA 3QADA",
+        "s1_desc": "مخدة الحرير 100% katkhali wjhek nqiy nhar o bLA hmar f'se9.",
+        "s2_title": "Sh3rek M3ana Ghadi Ytklafa",
+        "s2_desc": "L'7arer kayhdar mn l'7kaka o l'3qada o ktkhali sh3rek n3im o daym b'ndama.",
+        "s3_title": "Boudour M'7fou7a B7al Lwalou 7it",
+        "s3_desc": "L'7arer may3ksh l'boudour o y7afd 3la sa7t b'sartek o jildek.",
+        "s4_title": "Wsakh ? Rah Lah l'hdik",
+        "s4_desc": "SILK mayjem3ch ziti wala l'wsakh — yb9a dyafa l'wjhek l'kamel.",
+        "cta": "N9i Mkhaddtek L'7arer Daba"
+      },
+      "benefits": {
+        "title": "3lach Mkhadda L'7arer Hiya L'7el?",
+        "subtitle": "7aja Wahda, l'Fawa2ed Katwalaf",
+        "b1_title": "Chbab Daim",
+        "b1_desc": "مخدة الحرير katmna3 l'3qada o l'htihalat f'wjhek — fayda mdroussa 3la l'9iyada.",
+        "b2_title": "Sh3rek N3im",
+        "b2_desc": "7'fadat min l'7kaka f'sh3rek — la t'kerker, la t'gassed, ghayban daym briyyo.",
+        "b3_title": "Boutoula M'7fouda",
+        "b3_desc": "L'7arer mayems l'7boba b7al l'koton — sa7t l'Boutoula dyalk m7fouda.",
+        "b4_title": "Hypoallergénique",
+        "b4_desc": "مثالية للبشرة الحساسة — katmna3 l'7assasya o l'htihalat dial l'ihtikak.",
+        "b5_title": "100% Mulberry Silk",
+        "b5_desc": "La meilleure qualité fil 6adoom — mokhtara bldat 3la sa7t jildek o sh3rek.",
+        "b6_title": "هدية مثالية",
+        "b6_desc": "هاد المخدة هي الهدية li koll mra tst7a9 — rjal, sa9k 3la mratek wla khtek."
+      },
+      "before_after": {
+        "title": "Natija T7aden Biha",
+        "subtitle": "Makat7louch Tw9lek hadchi l'Klam",
+        "placeholder_before": "SO9 — Mkhadda 3adiya",
+        "before": "9BEL",
+        "after": "M3A LILA",
+        "result_title": "Mkhadda L'7arer Bdat T9leb L'Moda D'L'Jmal",
+        "result_text": "مخدة حرير فاخرة مشي مجرد اكسسوار — rahi istithmar f'jmalek l'medid. نونات ديال الستات فالمغرب بداو يقلبو عليها من بعد ما شافو الفرق.",
+        "stat1": "L'3qada D'L'Wejh",
+        "stat2": "L'ndama D'Sh3rek",
+        "stat3": "Qualité N'Chofa",
+        "stat4": "Mertah7a F'L'istikhdam"
+      },
+      "product": {
+        "vendor": "LILA — ليلى",
+        "cod": "دفع عند الاستلام — 💵 خلصي فاش توصلك المخدة",
+        "urgency": "تسوقي الآن — التوصيل مجاني لطلب 2 مخدات 🔥",
+        "f1": "ضمان 7 أيام للإرجاع — ولا مشكل",
+        "f2": "توصيل 3-5 أيام إلى جميع مدن المغرب",
+        "f3": "100% حرير طبيعي — مضمون",
+        "f4": "تغليف فاخر — هدية جاهزة",
+        "quantity": "الكمية",
+        "decrease": "ناقص",
+        "increase": "زائد",
+        "add_to_cart": "Zido L'Panier — 199 MAD ب",
+        "sold_out": "Tbda3 Daba",
+        "guarantee_title": "Daman 100% Mertah7a",
+        "guarantee_text": "Ola ma3jbatch l'mkhadda, rje3ha lina f'7 sat ayam o nrmolik flousek kamlin. 7na hna 3la 9adej ok."
+      },
+      "trust": {
+        "safe_title": "دفع آمن",
+        "safe_text": "معلوماتك الشخصية مشفرة ومحمية 100%",
+        "cod_title": "الدفع عند الاستلام",
+        "cod_text": "ماكتصرفيش حتى تشوفي المخدة فليداك",
+        "delivery_title": "توصيل سريع",
+        "delivery_text": "3-5 أيام إلى أي مدينة فالمغرب",
+        "return_title": "إرجاع مجاني",
+        "return_text": "7 أيام لردّ راس المال — ولا كلمة سي"
+      },
+      "testimonials": {
+        "title": "شنو كايقولو الزبونات ديالنا؟",
+        "subtitle": "+200 5 نجوم على google — العميلات فين مرتاحات",
+        "verified": "تم الشراء",
+        "r1": "واخا نادمة على حاجة وحدة — بلي ما جبتش 3 دفعة واحدة! والو ما عدل هاد المخدة من بعد النومة الأولى ديالي. ودلوقتي الشعري واصبر وناعم والوجه ما عادش تطلع فيه حبوب ولا تجاعيد. تمامًا!",
+        "r1_initial": "ن",
+        "r1_name": "نورة",
+        "r1_city": "الدار البيضاء",
+        "r2": "مخدة حرير بجودة والو ما شفتو. هادية هدية لختي ومرات ووالدته كلهم قلبات غير ترغب معاه. حتى الشعر كنبصلم وطري كيما كنت نحلام. بغيت نشري نفر من هاد المخدات.",
+        "r2_initial": "م",
+        "r2_name": "مريم",
+        "r2_city": "الرباط",
+        "r3": "صراحة كنت متشككة أولاً، ولكن بعد أسبوع واحد من الاستخدام — بغيت كلشي فالعالم عندو هاد المخدة. ما عدتش نقوم مع عقد فالعنق ولا تجاعيد الصباح. حتى زوجي لاحظ الفرق في بشرتي! شكرًا ليلى.",
+        "r3_initial": "ف",
+        "r3_name": "فاطمة",
+        "r3_city": "مراكش"
+      },
+      "faq": {
+        "title": "أسئلة شائعة — باش تفهمي كل حاجة",
+        "subtitle": "واضحة وبلا فلسفة",
+        "q1": "شنو بالضبط هاد المخدة وكيفاش كاتخدم؟",
+        "a1": "هاد مخدة من 100% حرير التوت (Mulberry Silk). مصممة باش تمنع الاحتكاك ديال الجلد والشعر فالنوم. الحرير كايخلي وجهننا مليح ومرتاح بلا تجاعيد ولا خطوط، والشعر كايضل ناعم بدون تشابك ولا تطيش.",
+        "q2": "شنو الفرق بين مخدة ليلى وهاد المخدات العادية اللي كاينة؟",
+        "a2": "الفرق بحال الفرق بين طيارة بيزنيس كلاس وطيارة إكونومي. المخدة العادية (قطن/پوليستر) كاتمتص الرطوبة وكتحك فالبشرة والشعر. مخدة ليلى حرير 100% فاخر — كاتحافظ على الزيوت الطبيعية ديال البشرة والشعر، مكاتجرش الحساسية، وكاين فيها كل الخواص اللي تحتاجيهم باش تنهضي نضرة ومتألقة.",
+        "q3": "كيفاش كاتجي التوصيلة وكم سعرها؟",
+        "a3": "التوصيل لباب الدار فجميع أقاليم المملكة. الثمن 39 درهم فقط. ولكن إذا طلبتي 2 مخدات أو أكثر — التوصيل مجاني!",
+        "q4": "واش كاين ضمان إرجاع ولا تبديل؟",
+        "a4": "أكيد. عندك 7 أيام من الاستلام باش ترجعي المخدة وتستردي فلوسك كاملين بلا نقاش (بمناسبة نوع المنتج ومراعاة للنظافة). وما تقلقيش — هاد الشي نادر ماوقع.",
+        "q5": "هل يمكنني الدفع عند الاستلام (COD)؟",
+        "a5": "إيوا بالطبيعة. خلصي فاش توصلك المخدة ليدك — نشوفوها أولاً وتأكدي من الجودة من قبل ما تخلصي. هاد الشي هو اللي مخلي البنات فالمغرب كايتسوقو معانا بثقة.",
+        "q6": "شنو حجم المخدة وشنو فيها مقاسات ولا لوان؟",
+        "a6": "مخدة ليلى عندها نفس المقاس القياسي: 50×70 سم (هاد المقاس لي مناسب لجميع أغطية المخدات اللي كاينة عندكم). كاينة لونين كلاسيك: شامپان الذهبي و روزي — الطبخة اللي تاهز ديكور الغرفة لستايل آخر.",
+        "q7": "كيفاش نغسلها ونهضر عليها؟",
+        "a7": "هان ساهلة. غسيل اليدين بمية باردة وشوية صابون ناعم (أو غسيل في الغسالة على برنامج حرير/لطيف). لا تنسايش من المبيضات وخلّيها تجف ناشفة فالهوى. الحرير عندو قوة بحال الحديد مع شوية العناية.",
+        "q8": "واش جربتي المخدة وعجبا والو؟",
+        "a8": "البنات كايحبوه والله. عندنا 4.9 نجوم من 5 بناء على 200+ تقييم. كثير منهم قالو بلي الفرق بان عليهم من أول نومة. ولكن فاش كاينين اللي مخدة الحرير ماعجباتهمش — هاد الحالة نادرة وعندنا ضمان اللي يحميك.",
+        "a9_extra1": "ساهلة. دوزي على رسالة (واتساب) تحت فالصفحة، وحنا غانعينك فكل حاجة — من ختيار المقاس واللون حتى التوصيلة والدفع."
+      },
+      "instagram": {
+        "title": "تابعينا على إنستغرام",
+        "subtitle": "اكتر من 50 ألف مغربية كايتابعو روتين ليلا",
+        "cta": "تابعينا @lila.ma"
+      },
+      "footer": {
+        "about": "LILA هي أول علامة مغربية متخصصة في مخدات حرير التوت الفاخرة. مهمتنا: نعطي لكل امرأة الإحساس بالفخامة والجمال كل صباح.",
+        "links_title": "روابط",
+        "link1": "المخدة",
+        "link2": "الأسئلة الشائعة",
+        "link3": "التقييمات",
+        "link4": "الفوائد",
+        "support_title": "الدعم",
+        "support1": "واتساب",
+        "support2": "البريد الإلكتروني",
+        "support3": "الأسئلة الشائعة",
+        "support4": "سياسة الخصوصية",
+        "newsletter_title": "القائمة البريدية",
+        "newsletter_text": "أول من يعرف العروض والمنتجات الجديدة.",
+        "newsletter_placeholder": "بريداك الإلكتروني",
+        "newsletter_btn": "اشتراك",
+        "newsletter_success": "شكرًا على الاشتراك! غانبعثولك أحسن العروض.",
+        "copyright": "جميع الحقوق محفوظة. صنع بالمغرب بحب."
+      },
+      "whatsapp": {
+        "label": "تواصل معنا عبر واتساب",
+        "message": "مرحبا ليلى! بغيت نسول على مخدة الحرير الفاخرة.",
+        "tooltip": "سولي على واتساب 💬"
+      }
+    },
+    "snippets": {
+      "sticky_atc": {
+        "cta": "Zidi L'Panier — 199 MAD"
+      },
+      "whatsapp": {
+        "label": "تواصل معنا عبر واتساب",
+        "message": "مرحبا ليلى! بغيت نسول على مخدة الحرير الفاخرة.",
+        "tooltip": "سولي على واتساب 💬"
+      }
+    },
+    "products": {
+      "product": {
+        "add_to_cart": "Zidi L'Panier — 199 MAD",
+        "sold_out": "Tbda3 Daba",
+        "unavailable": "Ghayba daba",
+        "quantity": "الكمية"
+      }
+    }
+  }
+}

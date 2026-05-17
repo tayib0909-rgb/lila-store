@@ -1,0 +1,107 @@
+<section class="section section-cream" id="problem">
+  <div class="page-width">
+    <div class="section-header">
+      <h2>{{ 'sections.problem.title' | t }}</h2>
+      <p>{{ 'sections.problem.subtitle' | t }}</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="problem-solution">
+      <div class="problem-side">
+        <div class="problem-icon">😫</div>
+        <h3 style="font-family: var(--font-heading); margin-bottom: 24px;">
+          {{ 'sections.problem.problem_title' | t }}
+        </h3>
+
+        <div class="problem-item">
+          <div class="problem-item-icon">✦</div>
+          <div>
+            <strong>{{ 'sections.problem.p1_title' | t }}</strong>
+            <p style="font-size: 14px; color: var(--color-text-light); margin: 4px 0 0;">{{ 'sections.problem.p1_desc' | t }}</p>
+          </div>
+        </div>
+
+        <div class="problem-item">
+          <div class="problem-item-icon">✦</div>
+          <div>
+            <strong>{{ 'sections.problem.p2_title' | t }}</strong>
+            <p style="font-size: 14px; color: var(--color-text-light); margin: 4px 0 0;">{{ 'sections.problem.p2_desc' | t }}</p>
+          </div>
+        </div>
+
+        <div class="problem-item">
+          <div class="problem-item-icon">✦</div>
+          <div>
+            <strong>{{ 'sections.problem.p3_title' | t }}</strong>
+            <p style="font-size: 14px; color: var(--color-text-light); margin: 4px 0 0;">{{ 'sections.problem.p3_desc' | t }}</p>
+          </div>
+        </div>
+
+        <div class="problem-item">
+          <div class="problem-item-icon">✦</div>
+          <div>
+            <strong>{{ 'sections.problem.p4_title' | t }}</strong>
+            <p style="font-size: 14px; color: var(--color-text-light); margin: 4px 0 0;">{{ 'sections.problem.p4_desc' | t }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="solution-side">
+        <div style="font-size: 48px; margin-bottom: 16px; color: var(--color-accent);">✨</div>
+        <h3 style="font-family: var(--font-heading); color: #fff; margin-bottom: 24px;">
+          {{ 'sections.problem.solution_title' | t }}
+        </h3>
+
+        <div class="solution-item">
+          <span class="solution-check">✓</span>
+          <div>
+            <strong style="color: #fff;">{{ 'sections.problem.s1_title' | t }}</strong>
+            <p>{{ 'sections.problem.s1_desc' | t }}</p>
+          </div>
+        </div>
+
+        <div class="solution-item">
+          <span class="solution-check">✓</span>
+          <div>
+            <strong style="color: #fff;">{{ 'sections.problem.s2_title' | t }}</strong>
+            <p>{{ 'sections.problem.s2_desc' | t }}</p>
+          </div>
+        </div>
+
+        <div class="solution-item">
+          <span class="solution-check">✓</span>
+          <div>
+            <strong style="color: #fff;">{{ 'sections.problem.s3_title' | t }}</strong>
+            <p>{{ 'sections.problem.s3_desc' | t }}</p>
+          </div>
+        </div>
+
+        <div class="solution-item">
+          <span class="solution-check">✓</span>
+          <div>
+            <strong style="color: #fff;">{{ 'sections.problem.s4_title' | t }}</strong>
+            <p>{{ 'sections.problem.s4_desc' | t }}</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 24px;">
+          <a href="#product" class="btn btn-primary">
+            {{ 'sections.problem.cta' | t }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Problem / Solution",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Problem / Solution"
+    }
+  ]
+}
+{% endschema %}

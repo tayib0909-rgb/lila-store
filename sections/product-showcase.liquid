@@ -1,0 +1,148 @@
+<section class="section" id="product">
+  <div class="page-width">
+    <div class="product-showcase">
+      <div class="product-gallery">
+        <div class="product-main-image">
+          <img
+            src="{{ product.featured_image | image_url: width: 700 }}"
+            alt="{{ product.title | escape }}"
+            id="ProductMainImage"
+            loading="eager"
+          >
+        </div>
+        {% if product.images.size > 1 %}
+          <div class="product-thumbnails" role="tablist">
+            {% for image in product.images limit: 6 %}
+              <div class="product-thumb {% if forloop.first %}active{% endif %}" data-image="{{ image | image_url: width: 700 }}" role="tab" tabindex="0">
+                <img src="{{ image | image_url: width: 150 }}" alt="{{ product.title | escape }}" loading="lazy">
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="product-info">
+        <p class="product-vendor">{{ 'sections.product.vendor' | t }}</p>
+        <h1 class="product-title">{{ product.title }}</h1>
+
+        <div class="product-price">
+          <span class="price-current" id="ProductPrice">
+            {{ product.selected_or_first_available_variant.price | money }}
+          </span>
+          {% if product.compare_at_price > product.price %}
+            <span class="price-compare">
+              {{ product.compare_at_price | money }}
+            </span>
+            <span class="price-badge">
+              -{{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price }}%
+            </span>
+          {% endif %}
+        </div>
+
+        <div class="cod-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="7" width="18" height="12" rx="2"/>
+            <path d="M3 11h18"/>
+            <path d="M7 15h.01"/>
+            <path d="M11 15h2"/>
+          </svg>
+          {{ 'sections.product.cod' | t }}
+        </div>
+
+        <div class="urgency-bar">
+          🔥 {{ 'sections.product.urgency' | t }}
+        </div>
+
+        {% if product.description != blank %}
+          <div class="product-description">
+            {{ product.description }}
+          </div>
+        {% endif %}
+
+        <div class="product-features">
+          <div class="product-feature-item">
+            <svg class="product-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>{{ 'sections.product.f1' | t }}</span>
+          </div>
+          <div class="product-feature-item">
+            <svg class="product-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>{{ 'sections.product.f2' | t }}</span>
+          </div>
+          <div class="product-feature-item">
+            <svg class="product-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>{{ 'sections.product.f3' | t }}</span>
+          </div>
+          <div class="product-feature-item">
+            <svg class="product-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+            <span>{{ 'sections.product.f4' | t }}</span>
+          </div>
+        </div>
+
+        <div class="product-form">
+          {% form 'product', product, class: 'product-form', id: 'AddToCartForm' %}
+            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+            <div class="product-qty">
+              <span class="qty-label">{{ 'sections.product.quantity' | t }}</span>
+              <div class="qty-selector">
+                <button type="button" class="qty-btn minus" aria-label="{{ 'sections.product.decrease' | t }}">−</button>
+                <input type="number" class="qty-input" name="quantity" value="1" min="1" max="99">
+                <button type="button" class="qty-btn plus" aria-label="{{ 'sections.product.increase' | t }}">+</button>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-large" id="AddToCartBtn" {% unless product.available %}disabled{% endunless %}>
+              {% if product.available %}
+                {{ 'sections.product.add_to_cart' | t }}
+              {% else %}
+                {{ 'sections.product.sold_out' | t }}
+              {% endif %}
+            </button>
+          {% endform %}
+        </div>
+
+        <div class="guarantee-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <polyline points="9 12 11 14 15 10"/>
+          </svg>
+          <div class="guarantee-badge-text">
+            <h4>{{ 'sections.product.guarantee_title' | t }}</h4>
+            <p>{{ 'sections.product.guarantee_text' | t }}</p>
+          </div>
+        </div>
+
+        <div class="trust-row">
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            {{ 'sections.product.trust1' | t }}
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18"/></svg>
+            {{ 'sections.product.trust2' | t }}
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5"/><polyline points="17 6 13.5 9.5"/></svg>
+            {{ 'sections.product.trust3' | t }}
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+            {{ 'sections.product.trust4' | t }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Showcase",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Product Showcase"
+    }
+  ]
+}
+{% endschema %}

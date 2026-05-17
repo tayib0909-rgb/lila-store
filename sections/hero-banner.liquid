@@ -1,0 +1,106 @@
+<section class="hero" id="hero">
+  {% if section.settings.image != blank %}
+    <img
+      class="hero-bg"
+      src="{{ section.settings.image | image_url: width: 2000 }}"
+      alt="{{ section.settings.title | escape }}"
+      loading="eager"
+      fetchpriority="high"
+    >
+  {% else %}
+    <div class="hero-bg" style="background: linear-gradient(135deg, #2D2D2D 0%, #1A1A1A 50%, #3D2D2D 100%);"></div>
+  {% endif %}
+  <div class="hero-overlay"></div>
+
+  <div class="page-width hero-content">
+    <p class="hero-subtitle animate-in">
+      {% if section.settings.subtitle != blank %}
+        {{ section.settings.subtitle }}
+      {% else %}
+        {{ 'sections.hero.subtitle' | t }}
+      {% endif %}
+    </p>
+
+    <h1 class="hero-title animate-in animate-in-delay-1">
+      {% if section.settings.title != blank %}
+        {{ section.settings.title }}
+      {% else %}
+        {{ 'sections.hero.title' | t }}
+      {% endif %}
+    </h1>
+
+    <p class="hero-text animate-in animate-in-delay-2">
+      {% if section.settings.text != blank %}
+        {{ section.settings.text }}
+      {% else %}
+        {{ 'sections.hero.text' | t }}
+      {% endif %}
+    </p>
+
+    <div class="hero-actions animate-in animate-in-delay-3">
+      <a href="{{ section.settings.button_link | default: '#product' }}" class="btn btn-primary btn-large">
+        {{ section.settings.button_text | default: 'sections.hero.cta' | t }}
+      </a>
+      <a href="#product" class="btn btn-secondary" style="border-color: rgba(255,255,255,0.3); color: #fff;">
+        {{ 'sections.hero.watch' | t }}
+      </a>
+    </div>
+
+    <div class="hero-badge animate-in animate-in-delay-3">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      {{ 'sections.hero.badge' | t }}
+    </div>
+  </div>
+</section>
+
+<div class="offer-bar">
+  <div class="page-width">
+    {{ 'sections.hero.offer' | t }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "LILA — مخدة الحرير الفاخرة"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Nharek Katchna<br>B'<span class=\"emphasis\">L'7arer</span>"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Description",
+      "default": "La première مخدة حرير فاخرة في المغرب. استيقضي وجمالك يتألق — صباح بدون تجاعيد، شعر بدون تشابك."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Banner"
+    }
+  ]
+}
+{% endschema %}

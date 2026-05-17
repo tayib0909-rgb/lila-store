@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}" dir="{{ settings.text_direction }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="theme-color" content="{{ settings.color_background }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+
+  {%- if settings.favicon != blank -%}
+    <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32 }}">
+  {%- endif -%}
+
+  <title>
+    {{ page_title }}
+    {%- if current_tags %} &ndash; {{ 'general.meta.tags' | t }}{% endif -%}
+    {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
+    {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+  </title>
+
+  {%- if page_description -%}
+    <meta name="description" content="{{ page_description | escape }}">
+  {%- endif -%}
+
+  {% render 'meta-tags' %}
+
+  {%- liquid
+    render 'google-fonts'
+    render 'arabic-fonts'
+  -%}
+
+  {{ content_for_header }}
+
+  {{ 'theme.css' | asset_url | stylesheet_tag }}
+
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    if (Shopify.designMode) {
+      document.documentElement.classList.add('shopify-design-mode');
+    }
+  </script>
+
+  {% style %}
+    :root {
+      --color-primary: {{ settings.color_primary }};
+      --color-primary-dark: {{ settings.color_primary_dark }};
+      --color-secondary: {{ settings.color_secondary }};
+      --color-accent: {{ settings.color_accent }};
+      --color-rose: {{ settings.color_rose }};
+      --color-cream: {{ settings.color_cream }};
+      --color-cream-dark: {{ settings.color_cream_dark }};
+      --color-text: {{ settings.color_text }};
+      --color-text-light: {{ settings.color_text_light }};
+      --color-background: {{ settings.color_background }};
+      --color-sale: {{ settings.color_sale }};
+      --color-button-text: {{ settings.color_button_text }};
+      --color-button-bg: {{ settings.color_button_bg }};
+      --color-button-hover: {{ settings.color_button_hover }};
+      --font-heading-family: {{ settings.font_heading_family }};
+      --font-body-family: {{ settings.font_body_family }};
+      --font-heading-arabic: {{ settings.font_heading_arabic }};
+      --font-body-arabic: {{ settings.font_body_arabic }};
+    }
+  {% endstyle %}
+</head>
+
+<body class="template-{{ template.name }}{# {% if request.design_mode %}design-mode{% endif %} #}">
+  {% sections 'header-group' %}
+
+  <main id="MainContent" role="main" tabindex="-1">
+    {{ content_for_layout }}
+  </main>
+
+  {% sections 'footer-group' %}
+
+  {% if settings.show_whatsapp %}
+    {% render 'whatsapp-button' %}
+  {% endif %}
+
+  {% if settings.show_sticky_atc %}
+    {% render 'sticky-add-to-cart' %}
+  {% endif %}
+
+  {{ 'theme.js' | asset_url | script_tag }}
+
+  <script>
+    window.lila = {
+      strings: {
+        addToCart: {{ 'products.product.add_to_cart' | t | json }},
+        soldOut: {{ 'products.product.sold_out' | t | json }},
+        unavailable: {{ 'products.product.unavailable' | t | json }},
+        quantity: {{ 'products.product.quantity' | t | json }}
+      },
+      moneyFormat: {{ shop.money_format | json }},
+      cartUrl: {{ routes.cart_url | json }},
+      cartAddUrl: {{ routes.cart_add_url | json }},
+      cartChangeUrl: {{ routes.cart_change_url | json }},
+      cartClearUrl: {{ routes.cart_clear_url | json }},
+      cartUpdateUrl: {{ routes.cart_update_url | json }},
+      predictiveSearchUrl: {{ routes.predictive_search_url | json }},
+      rootUrl: {{ routes.root_url | json }}
+    };
+  </script>
+</body>
+</html>

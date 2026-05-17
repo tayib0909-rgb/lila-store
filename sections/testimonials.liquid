@@ -1,0 +1,82 @@
+<section class="section section-cream" id="reviews">
+  <div class="page-width">
+    <div class="section-header">
+      <h2>{{ 'sections.testimonials.title' | t }}</h2>
+      <p>{{ 'sections.testimonials.subtitle' | t }}</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="testimonials-grid">
+      {% for i in (1..3) %}
+        {% assign review_key = 'r' | append: i %}
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            {% for star in (1..5) %}
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            {% endfor %}
+          </div>
+          <p class="testimonial-text">{{ 'sections.testimonials.' | append: review_key | t }}</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">{{ 'sections.testimonials.' | append: review_key | append: '_initial' | t }}</div>
+            <div class="author-info">
+              <div class="author-name">{{ 'sections.testimonials.' | append: review_key | append: '_name' | t }}</div>
+              <div class="author-location">{{ 'sections.testimonials.' | append: review_key | append: '_city' | t }}</div>
+            </div>
+            <span class="verified-badge">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              {{ 'sections.testimonials.verified' | t }}
+            </span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="section section-dark" style="padding: 60px 0;">
+  <div class="page-width">
+    <div class="trust-badges">
+      <div class="trust-badge">
+        <svg class="trust-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        <div class="trust-badge-title">{{ 'sections.trust.safe_title' | t }}</div>
+        <div class="trust-badge-text">{{ 'sections.trust.safe_text' | t }}</div>
+      </div>
+      <div class="trust-badge">
+        <svg class="trust-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="3" y="7" width="18" height="12" rx="2"/>
+          <path d="M3 11h18"/>
+        </svg>
+        <div class="trust-badge-title">{{ 'sections.trust.cod_title' | t }}</div>
+        <div class="trust-badge-text">{{ 'sections.trust.cod_text' | t }}</div>
+      </div>
+      <div class="trust-badge">
+        <svg class="trust-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+        </svg>
+        <div class="trust-badge-title">{{ 'sections.trust.delivery_title' | t }}</div>
+        <div class="trust-badge-text">{{ 'sections.trust.delivery_text' | t }}</div>
+      </div>
+      <div class="trust-badge">
+        <svg class="trust-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0118.8-4.3M22 12.5a10 10 0 01-18.8 4.2"/>
+        </svg>
+        <div class="trust-badge-title">{{ 'sections.trust.return_title' | t }}</div>
+        <div class="trust-badge-text">{{ 'sections.trust.return_text' | t }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Testimonials & Trust",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Testimonials & Trust"
+    }
+  ]
+}
+{% endschema %}

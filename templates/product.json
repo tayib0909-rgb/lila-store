@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "announcement": {
+      "type": "announcement-bar",
+      "settings": {}
+    },
+    "header": {
+      "type": "header",
+      "settings": {}
+    },
+    "main": {
+      "type": "product-showcase",
+      "settings": {}
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {}
+    },
+    "instagram": {
+      "type": "instagram-feed",
+      "settings": {}
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {}
+    },
+    "whatsapp": {
+      "type": "whatsapp-button",
+      "settings": {}
+    }
+  },
+  "order": [
+    "announcement",
+    "header",
+    "main",
+    "testimonials",
+    "faq",
+    "instagram",
+    "footer",
+    "whatsapp"
+  ]
+}
