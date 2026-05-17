@@ -20,11 +20,10 @@
     "font_body_arabic": "'Tajawal', 'Noto Naskh Arabic', sans-serif",
     "show_whatsapp": true,
     "whatsapp_number": "212600000000",
-    "show_sticky_atc": true,
-    "favicon": null
+    "show_sticky_atc": true
   },
   "presets": {
-    "Default": {
+    "LILA": {
       "color_primary": "#C4956A",
       "color_primary_dark": "#A67B52",
       "color_secondary": "#2D2D2D",
