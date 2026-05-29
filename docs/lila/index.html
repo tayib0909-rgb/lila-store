@@ -753,7 +753,7 @@ footer{background:var(--secondary);color:rgba(255,255,255,.8);padding:60px 0 30p
         <div class="upsell-price">199 DH <small>399 DH</small></div>
         <div class="upsell-save">توفير 200 DH</div>
         <div class="upsell-desc">مخدة حرير طبيعي + تغليف هدية. مثالية باش تجربي المنتج.</div>
-        <button class="btn btn-primary" style="width:100%;font-family:var(--font-ar);text-transform:none;letter-spacing:normal;font-size:14px">🎀 نطلب وحدا</button>
+        <button class="btn btn-primary" style="width:100%;font-family:var(--font-ar);text-transform:none;letter-spacing:normal;font-size:14px" onclick="addToCart(1)">🎀 نطلب وحدا</button>
       </div>
       <div class="upsell-card featured">
         <div class="upsell-badge">الأكثر مبيعاً 🔥</div>
@@ -762,7 +762,7 @@ footer{background:var(--secondary);color:rgba(255,255,255,.8);padding:60px 0 30p
         <div class="upsell-price">349 DH <small>798 DH</small></div>
         <div class="upsell-save">توفير 449 DH + توصيل مجاني</div>
         <div class="upsell-desc">مخدتين — وحدة ليك ووحدة هدية. أو وحدة للتبديل. الأكثر طلباً!</div>
-        <button class="btn btn-primary" style="width:100%;font-family:var(--font-ar);text-transform:none;letter-spacing:normal;font-size:14px;background:var(--primary-dark)">🔥 نطلب جوج</button>
+        <button class="btn btn-primary" style="width:100%;font-family:var(--font-ar);text-transform:none;letter-spacing:normal;font-size:14px;background:var(--primary-dark)" onclick="addToCart(2)">🔥 نطلب جوج</button>
       </div>
       <div class="upsell-card">
         <div style="font-size:48px;margin-bottom:8px">👑</div>
@@ -770,7 +770,7 @@ footer{background:var(--secondary);color:rgba(255,255,255,.8);padding:60px 0 30p
         <div class="upsell-price">499 DH <small>1197 DH</small></div>
         <div class="upsell-save">توفير 698 DH + توصيل مجاني</div>
         <div class="upsell-desc">3 مخدات + قطعة قناع نوم حرير هدية. ليك، لزوجك، ولبيتك.</div>
-        <button class="btn btn-primary" style="width:100%;font-family:var(--font-ar);text-transform:none;letter-spacing:normal;font-size:14px">👑 نطلب الباقة</button>
+        <button class="btn btn-primary" style="width:100%;font-family:var(--font-ar);text-transform:none;letter-spacing:normal;font-size:14px" onclick="addToCart(3)">👑 نطلب الباقة</button>
       </div>
     </div>
     <div style="text-align:center;margin-top:24px">
@@ -1059,7 +1059,7 @@ footer{background:var(--secondary);color:rgba(255,255,255,.8);padding:60px 0 30p
       <div class="sticky-atc-title ar">LILA — مخدة الحرير الفاخرة</div>
       <div class="sticky-atc-price">199 DH <span style="font-size:12px;color:var(--text-light);text-decoration:line-through">399 DH</span></div>
     </div>
-    <button class="sticky-atc-btn ar" onclick="addToCart()" style="letter-spacing:normal;text-transform:none">🎀 زيدي لپانيي</button>
+    <button class="sticky-atc-btn ar" onclick="addToCart(document.getElementById('qty').value)" style="letter-spacing:normal;text-transform:none">🎀 زيدي لپانيي</button>
     <a href="https://wa.me/212707975742?text=السلام+عليكم+بغيت+نطلب+LILA+مخدة+الحرير" target="_blank" class="btn btn-whatsapp" style="padding:14px 20px;font-family:var(--font-ar);text-transform:none;letter-spacing:normal;font-size:13px;display:flex;align-items:center;gap:6px">💬 واتساب</a>
   </div>
 </div>
@@ -1098,7 +1098,7 @@ function changeQty(delta){var qty=document.getElementById('qty'),val=parseInt(qt
 (function(){var sticky=document.getElementById('stickyATC'),product=document.querySelector('.product-show');if(!sticky||!product)return;var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){sticky.classList.toggle('visible',!entry.isIntersecting)})},{threshold:0});observer.observe(product)})();
 
 /* === ADD TO CART === */
-function addToCart(){var qty=document.getElementById('qty').value;showToast('🎀 تمت إضافة '+qty+' مخدة LILA إلى السلة!','success');document.querySelector('.cart-count').textContent=parseInt(document.querySelector('.cart-count').textContent)+parseInt(qty)}
+function addToCart(qty){if(!qty)qty=document.getElementById('qty').value;var c=document.querySelector('.color-swatch.active').title||'شامبين';var msg='السلام عليكم 👋\n\nبغيت نطلب من LILA:\n• مخدة الحرير الفاخرة\n• العدد: '+qty+'\n• اللون: '+c+'\n• المجموع: '+(199*parseInt(qty))+' DH\n\nالعنوان: \nالهاتف: \n';window.open('https://wa.me/212707975742?text='+encodeURIComponent(msg),'_blank')}
 
 /* === TOAST === */
 function showToast(msg,type){var t=document.getElementById('toast');t.innerHTML='<span>'+msg+'</span>';t.className='toast toast-'+type;t.classList.add('show');clearTimeout(t._timer);t._timer=setTimeout(function(){t.classList.remove('show')},3000)}
