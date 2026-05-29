@@ -212,7 +212,12 @@ footer{background:var(--secondary);color:rgba(255,255,255,.8);padding:50px 0 24p
           <h3 class="ar">وسادة تدفئة USB</h3>
           <div class="pds">وسادة حرارية كهربائية USB — تشتغل بالكمبيوتر أو power bank. تخفف آلام البطن والظهر فـ 10 دقائق.</div>
           <div class="pp">149 DH <s>250 DH</s></div>
-          <button class="pb-btn" onclick="ac('وسادة تدفئة USB','149')">🛒 زيدي لسلة</button>
+          <div class="qty-row" style="display:flex;align-items:center;justify-content:center;gap:8px;margin:10px 0">
+            <button class="qty-btn" onclick="cq('u1',-1)" style="width:32px;height:32px;border-radius:50%;border:1px solid #ddd;background:none;cursor:pointer;font-size:16px">−</button>
+            <span id="u1" style="font-weight:700;font-size:16px;min-width:24px;text-align:center">1</span>
+            <button class="qty-btn" onclick="cq('u1',1)" style="width:32px;height:32px;border-radius:50%;border:1px solid #ddd;background:none;cursor:pointer;font-size:16px">+</button>
+          </div>
+          <button class="pb-btn" onclick="ac('وسادة تدفئة USB','149','u1')">🛒 زيدي لسلة</button>
         </div>
       </div>
       <div class="pc f">
@@ -223,7 +228,12 @@ footer{background:var(--secondary);color:rgba(255,255,255,.8);padding:50px 0 24p
           <h3 class="ar">جهاز تدليك محمول</h3>
           <div class="pds">جهاز تدليك متعدد الاستخدامات — للبطن، الظهر، الرقبة، والأكتاف. 3 رؤوس مختلفة + 5 سرعات. لاسلكي.</div>
           <div class="pp">199 DH <s>350 DH</s></div>
-          <button class="pb-btn" style="background:var(--grad-dark)" onclick="ac('جهاز تدليك محمول','199')">🔥 زيدي لسلة</button>
+          <div class="qty-row" style="display:flex;align-items:center;justify-content:center;gap:8px;margin:10px 0">
+            <button class="qty-btn" onclick="cq('u2',-1)" style="width:32px;height:32px;border-radius:50%;border:1px solid #ddd;background:none;cursor:pointer;font-size:16px">−</button>
+            <span id="u2" style="font-weight:700;font-size:16px;min-width:24px;text-align:center">1</span>
+            <button class="qty-btn" onclick="cq('u2',1)" style="width:32px;height:32px;border-radius:50%;border:1px solid #ddd;background:none;cursor:pointer;font-size:16px">+</button>
+          </div>
+          <button class="pb-btn" style="background:var(--grad-dark)" onclick="ac('جهاز تدليك محمول','199','u2')">🔥 زيدي لسلة</button>
         </div>
       </div>
       <div class="pc">
@@ -233,7 +243,12 @@ footer{background:var(--secondary);color:rgba(255,255,255,.8);padding:50px 0 24p
           <h3 class="ar">باقة الراحة الكاملة</h3>
           <div class="pds">وسادة تدفئة USB + جهاز تدليك + زيت طبيعي مهدئ + كيس هدية. كلشي فباقة وحدة.</div>
           <div class="pp">299 DH <s>550 DH</s></div>
-          <button class="pb-btn" onclick="ac('باقة الراحة الكاملة','299')">🎁 زيدي لسلة</button>
+          <div class="qty-row" style="display:flex;align-items:center;justify-content:center;gap:8px;margin:10px 0">
+            <button class="qty-btn" onclick="cq('u3',-1)" style="width:32px;height:32px;border-radius:50%;border:1px solid #ddd;background:none;cursor:pointer;font-size:16px">−</button>
+            <span id="u3" style="font-weight:700;font-size:16px;min-width:24px;text-align:center">1</span>
+            <button class="qty-btn" onclick="cq('u3',1)" style="width:32px;height:32px;border-radius:50%;border:1px solid #ddd;background:none;cursor:pointer;font-size:16px">+</button>
+          </div>
+          <button class="pb-btn" onclick="ac('باقة الراحة الكاملة','299','u3')">🎁 زيدي لسلة</button>
         </div>
       </div>
     </div>
@@ -373,7 +388,8 @@ footer{background:var(--secondary);color:rgba(255,255,255,.8);padding:50px 0 24p
 <div class="toast" id="t"></div>
 
 <script>
-function ac(n,p){showToast('🛒 تمت إضافة '+n+' ('+p+' DH) إلى السلة!','s')}
+function ac(n,p,q){var qty=q?parseInt(document.getElementById(q).innerText):1;var t=p*qty;var msg='السلام عليكم 👋\n\nبغيت نطلب من RAHA:\n• '+n+'\n• العدد: '+qty+'\n• السعر: '+p+' DH × '+qty+' = '+t+' DH\n\nالعنوان: \nالهاتف: \n';window.open('https://wa.me/212707975742?text='+encodeURIComponent(msg),'_blank')}
+function cq(id,d){var e=document.getElementById(id),v=parseInt(e.innerText)||1;v+=d;if(v<1)v=1;if(v>10)v=10;e.innerText=v}
 function showToast(m,ty){var o=document.getElementById('t');o.innerHTML='<span>'+m+'</span>';o.className='toast toast-'+ty;o.classList.add('show');clearTimeout(o._t);o._t=setTimeout(function(){o.classList.remove('show')},3000)}
 function om(){document.getElementById('mm').classList.add('open');document.querySelector('.mmo').classList.add('v');document.body.style.overflow='hidden'}
 function cm(){document.getElementById('mm').classList.remove('open');document.querySelector('.mmo').classList.remove('v');document.body.style.overflow=''}
