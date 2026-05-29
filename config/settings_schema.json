@@ -5,7 +5,7 @@
     "theme_version": "1.0.0",
     "theme_author": "LILA Store Morocco",
     "theme_documentation_url": "https://github.com/tayib0909-rgb/lila-store",
-    "theme_support_url": "https://wa.me/212600000000"
+    "theme_support_url": "https://wa.me/212707975742"
   },
   {
     "name": "Theme Settings",
@@ -140,8 +140,8 @@
         "type": "text",
         "id": "whatsapp_number",
         "label": "WhatsApp Number",
-        "info": "Include country code (e.g., 212600000000)",
-        "default": "212600000000"
+        "info": "Include country code (e.g., 212707975742)",
+        "default": "212707975742"
       },
       {
         "type": "header",
