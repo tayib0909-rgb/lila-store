@@ -63,7 +63,9 @@ nav a:hover{color:var(--primary)}
 .pc:hover{transform:translateY(-4px);box-shadow:0 8px 40px rgba(123,45,142,.12)}
 .pc.f{border:2px solid var(--primary);box-shadow:0 0 0 1px var(--primary)}
 .pb{position:absolute;top:12px;left:12px;z-index:2;background:var(--grad);color:#fff;padding:4px 14px;border-radius:50px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;animation:pulseBadge 2s infinite}@keyframes pulseBadge{0%,100%{box-shadow:0 0 0 0 rgba(123,45,142,.4)}50%{box-shadow:0 0 0 8px rgba(123,45,142,0)}}
-.pi{background:var(--cream);padding:30px;text-align:center;font-size:64px;min-height:180px;display:flex;align-items:center;justify-content:center}
+.pi{background:var(--cream);padding:0;text-align:center;min-height:200px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.pi img{width:100%;height:200px;object-fit:cover;display:block;transition:transform .4s}
+.pc:hover .pi img{transform:scale(1.05)}
 .pd{padding:20px}
 .pv{font-size:10px;font-weight:600;letter-spacing:2px;color:var(--primary);text-transform:uppercase;margin-bottom:2px}
 .pc h3{font-size:17px;margin-bottom:6px;font-family:var(--font-a)}
@@ -210,32 +212,32 @@ footer{background:var(--secondary);color:rgba(255,255,255,.8);padding:50px 0 24p
     </div>
     <div class="pg">
       <div class="pc">
-        <div class="pi">🔥</div>
+        <div class="pi"><img src="https://ae01.alicdn.com/kf/Sc84a7a1705f3414f94035383af136ae22.jpg" alt="وسادة تدفئة USB" loading="lazy"></div>
         <div class="pd">
           <div class="pv">RAHA — راحة</div>
           <h3 class="ar">وسادة تدفئة USB</h3>
-          <div class="pds">وسادة حرارية كهربائية USB — تشتغل بالكمبيوتر أو power bank. تخفف آلام البطن والظهر فـ 10 دقائق.</div>
+          <div class="pds">وسادة حرارية كهربائية USB — كاتشحن بالكومبيوتر ولا power bank. كاتدفّي البطن والظهر فـ 10 دقايق وكاتريح التشنجات ديال الدورة.</div>
           <div class="pp">149 DH <s>250 DH</s></div>
           <button class="pb-btn" onclick="ac('وسادة تدفئة USB','149')">🛒 زيدي لسلة</button>
         </div>
       </div>
       <div class="pc f">
         <div class="pb">الأكثر مبيعاً 🔥</div>
-        <div class="pi">💆‍♀️</div>
+        <div class="pi"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S57b2668519d6403c8fd126a8a0d1b3d6N.jpg" alt="جهاز تدليك محمول" loading="lazy"></div>
         <div class="pd">
           <div class="pv">RAHA — راحة</div>
           <h3 class="ar">جهاز تدليك محمول</h3>
-          <div class="pds">جهاز تدليك متعدد الاستخدامات — للبطن، الظهر، الرقبة، والأكتاف. 3 رؤوس مختلفة + 5 سرعات. لاسلكي.</div>
+          <div class="pds">جهاز تدليك صغير وقوي — كايدلك البطن والظهر والرقبة والأكتاف. عندو 3 رؤوس و 5 سرعات. لاسلكي وشاحن USB.</div>
           <div class="pp">199 DH <s>350 DH</s></div>
           <button class="pb-btn" style="background:var(--grad-dark)" onclick="ac('جهاز تدليك محمول','199')">🔥 زيدي لسلة</button>
         </div>
       </div>
       <div class="pc">
-        <div class="pi">🎁</div>
+        <div class="pi"><img src="https://ae01.alicdn.com/kf/S3f758c9549b44a679245413e05cf259fr.jpg" alt="باقة الراحة الكاملة" loading="lazy"></div>
         <div class="pd">
           <div class="pv">RAHA — راحة</div>
           <h3 class="ar">باقة الراحة الكاملة</h3>
-          <div class="pds">وسادة تدفئة USB + جهاز تدليك + زيت طبيعي مهدئ + كيس هدية. كلشي فباقة وحدة.</div>
+          <div class="pds">وسادة تدفئة USB + جهاز تدليك + زيت طبيعي مهدئ + كيس هدية فاخر. كلشي مجمع باش تهديه ولا تاخديه لراسك.</div>
           <div class="pp">299 DH <s>550 DH</s></div>
           <button class="pb-btn" onclick="ac('باقة الراحة الكاملة','299')">🎁 زيدي لسلة</button>
         </div>
