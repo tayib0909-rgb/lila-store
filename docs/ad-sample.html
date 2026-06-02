@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar-MA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAHA — إعلان</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;700;900&family=Playfair+Display:wght@400;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Tajawal',sans-serif;background:linear-gradient(135deg,#1A0A2B,#2D1B3D,#7B2D8E);min-height:100vh;display:flex;align-items:center;justify-content:center;direction:rtl;overflow:hidden}
+.ad{width:100%;max-width:400px;height:700px;background:linear-gradient(180deg,#1A0A2B 0%,#2D1B3D 30%,#7B2D8E 70%,#9B4D9E 100%);border-radius:0;overflow:hidden;position:relative;box-shadow:0 0 80px rgba(123,45,142,.3)}
+.particles{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.p{position:absolute;width:4px;height:4px;background:rgba(255,255,255,.3);border-radius:50%;animation:floatUp linear infinite}
+.p:nth-child(1){left:10%;animation-duration:8s;animation-delay:0s}
+.p:nth-child(2){left:25%;animation-duration:11s;animation-delay:2s;width:3px;height:3px}
+.p:nth-child(3){left:40%;animation-duration:9s;animation-delay:4s;width:5px;height:5px}
+.p:nth-child(4){left:55%;animation-duration:10s;animation-delay:1s}
+.p:nth-child(5){left:70%;animation-duration:7s;animation-delay:3s;width:3px;height:3px}
+.p:nth-child(6){left:85%;animation-duration:12s;animation-delay:5s;width:5px;height:5px}
+.p:nth-child(7){left:50%;animation-duration:9s;animation-delay:6s}
+.p:nth-child(8){left:15%;animation-duration:10s;animation-delay:7s;width:3px;height:3px}
+@keyframes floatUp{0%{transform:translateY(700px) scale(1);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(-100px) scale(.5);opacity:0}}
+.ad-inner{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;padding:40px 24px 30px}
+.logo{text-align:center;margin-bottom:10px;animation:fadeDown .8s .2s forwards;opacity:0}
+.logo .r{font-family:'Playfair Display',serif;font-size:48px;font-weight:700;color:#fff;animation:pulse 2s infinite}
+.logo .aha{font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#D48A9B}
+.logo .sub{font-size:11px;letter-spacing:4px;color:rgba(255,255,255,.4);margin-top:-4px;text-transform:uppercase}
+@keyframes fadeDown{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{text-shadow:0 0 20px rgba(123,45,142,.5)}50%{text-shadow:0 0 40px rgba(123,45,142,.8)}}
+.tagline{text-align:center;margin-bottom:20px;animation:fadeUp .6s .6s forwards;opacity:0}
+.tagline h1{font-size:26px;font-weight:900;color:#fff;line-height:1.3;font-family:'Tajawal',sans-serif}
+.tagline h1 em{color:#D48A9B;font-style:normal;display:block}
+.tagline p{font-size:13px;color:rgba(255,255,255,.5);margin-top:6px}
+@keyframes fadeUp{0%{opacity:0;transform:translateY(20px)}100%{opacity:1;transform:translateY(0)}}
+.products{flex:1;display:flex;flex-direction:column;gap:8px;justify-content:center}
+.product{background:rgba(255,255,255,.08);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:12px 16px;display:flex;align-items:center;gap:14px;transition:.3s;animation:slideIn .5s forwards;opacity:0;transform:translateX(-30px)}
+.product:nth-child(1){animation-delay:.8s}
+.product:nth-child(2){animation-delay:1.1s}
+.product:nth-child(3){animation-delay:1.4s}
+.product:hover{background:rgba(255,255,255,.14);transform:scale(1.02)}
+@keyframes slideIn{0%{opacity:0;transform:translateX(-30px)}100%{opacity:1;transform:translateX(0)}}
+.p-img{width:56px;height:56px;border-radius:10px;background:rgba(255,255,255,.1);flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.p-img img{width:100%;height:100%;object-fit:cover}
+.p-info{flex:1}
+.p-name{font-size:14px;font-weight:700;color:#fff;font-family:'Tajawal',sans-serif}
+.p-price{font-size:20px;font-weight:900;color:#D48A9B;font-family:'Tajawal',sans-serif;margin-top:0}
+.p-price s{font-size:11px;color:rgba(255,255,255,.3);font-weight:400;margin-right:6px}
+.p-tag{font-size:9px;background:#D48A9B;color:#1A0A2B;padding:2px 8px;border-radius:20px;font-weight:700;display:inline-block;margin-bottom:2px}
+.cta{margin-top:20px;text-align:center;animation:bounceIn .6s 1.8s forwards;opacity:0}
+.cta a{display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;padding:16px;border-radius:50px;font-size:16px;font-weight:700;text-decoration:none;transition:.3s;font-family:'Tajawal',sans-serif;box-shadow:0 8px 30px rgba(37,211,102,.3)}
+.cta a:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(37,211,102,.4)}
+.cta .sub{font-size:11px;color:rgba(255,255,255,.5);margin-top:10px}
+.cta .sub span{color:#D48A9B}
+@keyframes bounceIn{0%{opacity:0;transform:scale(.8)}50%{transform:scale(1.05)}100%{opacity:1;transform:scale(1)}}
+.badge{position:absolute;top:16px;right:16px;z-index:5;background:linear-gradient(135deg,#FF6B6B,#EE5A24);color:#fff;padding:4px 12px;border-radius:6px;font-size:9px;font-weight:700;animation:glow 1.5s infinite}
+@keyframes glow{0%,100%{box-shadow:0 0 10px rgba(238,90,36,.4)}50%{box-shadow:0 0 25px rgba(238,90,36,.7)}}
+@media(min-width:768px){.ad{max-width:400px;height:700px;border-radius:24px;margin:20px}}
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="badge">🔥 توفير 150 DH</div>
+  <div class="particles">
+    <div class="p"></div><div class="p"></div><div class="p"></div>
+    <div class="p"></div><div class="p"></div><div class="p"></div>
+    <div class="p"></div><div class="p"></div>
+  </div>
+  <div class="ad-inner">
+    <div class="logo">
+      <div><span class="r">R</span><span class="aha">AHA</span></div>
+      <div class="sub">راحة</div>
+    </div>
+    <div class="tagline">
+      <h1>دورتك بلا وجع<br><em>بلا أدوية… بلا عناء</em></h1>
+      <p>الحل الطبيعي لآلام الدورة — معروف ومجرب فالمغرب</p>
+    </div>
+    <div class="products">
+      <div class="product" onclick="wa('وسادة تدفئة USB','249')">
+        <div class="p-img"><img src="https://ae01.alicdn.com/kf/Sc84a7a1705f3414f94035383af136ae22.jpg" alt="وسادة تدفئة" loading="lazy"></div>
+        <div class="p-info">
+          <div class="p-name">وسادة تدفئة USB</div>
+          <div class="p-price">249 DH <s>450 DH</s></div>
+        </div>
+      </div>
+      <div class="product" onclick="wa('جهاز تدليك محمول','199')">
+        <div class="p-img"><img src="https://ae-pic-a1.aliexpress-media.com/kf/S57b2668519d6403c8fd126a8a0d1b3d6N.jpg" alt="جهاز تدليك" loading="lazy"></div>
+        <div class="p-info">
+          <div class="p-tag">الأكثر مبيعاً 🔥</div>
+          <div class="p-name">جهاز تدليك محمول</div>
+          <div class="p-price">199 DH <s>350 DH</s></div>
+        </div>
+      </div>
+      <div class="product" onclick="wa('باقة الراحة الكاملة','399')">
+        <div class="p-img"><img src="https://ae01.alicdn.com/kf/S3f758c9549b44a679245413e05cf259fr.jpg" alt="باقة الراحة" loading="lazy"></div>
+        <div class="p-info">
+          <div class="p-name">باقة الراحة الكاملة</div>
+          <div class="p-price">399 DH <s>650 DH</s></div>
+        </div>
+      </div>
+    </div>
+    <div class="cta">
+      <a href="https://wa.me/212707975742?text=السلام+عليكم+بغيت+نطلب+من+RAHA" target="_blank">💬 اطلبي دابا عبر واتساب</a>
+      <div class="sub">✅ الدفع عند الاستلام &nbsp;|&nbsp; 🚚 توصيل 3-5 أيام للمغرب كامل &nbsp;|&nbsp; 🛡️ ضمان 7 أيام</div>
+    </div>
+  </div>
+</div>
+<script>
+function wa(n,p){window.open('https://wa.me/212707975742?text='+encodeURIComponent('السلام عليكم 👋\n\nبغيت نطلب من RAHA:\n• '+n+'\n• الثمن: '+p+' DH\n\nالعنوان: \nالهاتف: '),'_blank')}
+</script>
+</body>
+</html>
