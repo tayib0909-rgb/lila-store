@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "ad": {
+      "type": "raha-ad",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ad"
+  ]
+}
