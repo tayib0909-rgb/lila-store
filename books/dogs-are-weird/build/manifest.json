@@ -7,7 +7,7 @@
    "category": "The Drama Queens",
    "img_id": "IMG-001",
    "page": 10,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 2,
@@ -15,7 +15,7 @@
    "category": "The Drama Queens",
    "img_id": "IMG-002",
    "page": 11,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 3,
@@ -23,7 +23,7 @@
    "category": "The Drama Queens",
    "img_id": "IMG-003",
    "page": 12,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 4,
@@ -31,7 +31,7 @@
    "category": "The Drama Queens",
    "img_id": "IMG-004",
    "page": 13,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 5,
@@ -39,7 +39,7 @@
    "category": "The Drama Queens",
    "img_id": "IMG-005",
    "page": 14,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 6,
@@ -47,7 +47,7 @@
    "category": "The Drama Queens",
    "img_id": "IMG-006",
    "page": 15,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 7,
@@ -55,7 +55,7 @@
    "category": "The Drama Queens",
    "img_id": "IMG-007",
    "page": 16,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 8,
@@ -63,7 +63,7 @@
    "category": "The Drama Queens",
    "img_id": "IMG-008",
    "page": 17,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 9,
@@ -71,7 +71,7 @@
    "category": "The Drama Queens",
    "img_id": "IMG-009",
    "page": 18,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 10,
@@ -79,7 +79,7 @@
    "category": "The Drama Queens",
    "img_id": "IMG-010",
    "page": 19,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 11,
@@ -87,7 +87,7 @@
    "category": "The Drama Queens",
    "img_id": "IMG-011",
    "page": 20,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 12,
@@ -95,7 +95,7 @@
    "category": "The Drama Queens",
    "img_id": "IMG-012",
    "page": 21,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 13,
@@ -103,7 +103,7 @@
    "category": "The Tiny Bosses",
    "img_id": "IMG-013",
    "page": 26,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 14,
@@ -111,7 +111,7 @@
    "category": "The Tiny Bosses",
    "img_id": "IMG-014",
    "page": 27,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 15,
@@ -119,7 +119,7 @@
    "category": "The Tiny Bosses",
    "img_id": "IMG-015",
    "page": 28,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 16,
@@ -127,7 +127,7 @@
    "category": "The Tiny Bosses",
    "img_id": "IMG-016",
    "page": 29,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 17,
@@ -135,7 +135,7 @@
    "category": "The Tiny Bosses",
    "img_id": "IMG-017",
    "page": 30,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 18,
@@ -143,7 +143,7 @@
    "category": "The Tiny Bosses",
    "img_id": "IMG-018",
    "page": 31,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 19,
@@ -151,7 +151,7 @@
    "category": "The Tiny Bosses",
    "img_id": "IMG-019",
    "page": 32,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 20,
@@ -159,7 +159,7 @@
    "category": "The Tiny Bosses",
    "img_id": "IMG-020",
    "page": 33,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 21,
@@ -167,7 +167,7 @@
    "category": "The Tiny Bosses",
    "img_id": "IMG-021",
    "page": 34,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 22,
@@ -175,7 +175,7 @@
    "category": "The Tiny Bosses",
    "img_id": "IMG-022",
    "page": 35,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 23,
@@ -183,7 +183,7 @@
    "category": "The Tiny Bosses",
    "img_id": "IMG-023",
    "page": 36,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 24,
@@ -191,7 +191,7 @@
    "category": "The Tiny Bosses",
    "img_id": "IMG-024",
    "page": 37,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 25,
@@ -199,7 +199,7 @@
    "category": "The Tiny Bosses",
    "img_id": "IMG-025",
    "page": 38,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 26,
@@ -207,7 +207,7 @@
    "category": "The Fluffy Legends",
    "img_id": "IMG-026",
    "page": 42,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 27,
@@ -215,7 +215,7 @@
    "category": "The Fluffy Legends",
    "img_id": "IMG-027",
    "page": 43,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 28,
@@ -223,7 +223,7 @@
    "category": "The Fluffy Legends",
    "img_id": "IMG-028",
    "page": 44,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 29,
@@ -231,7 +231,7 @@
    "category": "The Fluffy Legends",
    "img_id": "IMG-029",
    "page": 45,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 30,
@@ -239,7 +239,7 @@
    "category": "The Fluffy Legends",
    "img_id": "IMG-030",
    "page": 46,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 31,
@@ -247,7 +247,7 @@
    "category": "The Fluffy Legends",
    "img_id": "IMG-031",
    "page": 47,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 32,
@@ -255,7 +255,7 @@
    "category": "The Fluffy Legends",
    "img_id": "IMG-032",
    "page": 48,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 33,
@@ -263,7 +263,7 @@
    "category": "The Fluffy Legends",
    "img_id": "IMG-033",
    "page": 49,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 34,
@@ -271,7 +271,7 @@
    "category": "The Fluffy Legends",
    "img_id": "IMG-034",
    "page": 50,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 35,
@@ -279,7 +279,7 @@
    "category": "The Fluffy Legends",
    "img_id": "IMG-035",
    "page": 51,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 36,
@@ -287,7 +287,7 @@
    "category": "The Fluffy Legends",
    "img_id": "IMG-036",
    "page": 52,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 37,
@@ -295,7 +295,7 @@
    "category": "The Fluffy Legends",
    "img_id": "IMG-037",
    "page": 53,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 38,
@@ -303,7 +303,7 @@
    "category": "The Professional Couch Potatoes",
    "img_id": "IMG-038",
    "page": 57,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 39,
@@ -311,7 +311,7 @@
    "category": "The Professional Couch Potatoes",
    "img_id": "IMG-039",
    "page": 58,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 40,
@@ -319,7 +319,7 @@
    "category": "The Professional Couch Potatoes",
    "img_id": "IMG-040",
    "page": 59,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 41,
@@ -327,7 +327,7 @@
    "category": "The Professional Couch Potatoes",
    "img_id": "IMG-041",
    "page": 60,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 42,
@@ -335,7 +335,7 @@
    "category": "The Professional Couch Potatoes",
    "img_id": "IMG-042",
    "page": 61,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 43,
@@ -343,7 +343,7 @@
    "category": "The Professional Couch Potatoes",
    "img_id": "IMG-043",
    "page": 62,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 44,
@@ -351,7 +351,7 @@
    "category": "The Professional Couch Potatoes",
    "img_id": "IMG-044",
    "page": 63,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 45,
@@ -359,7 +359,7 @@
    "category": "The Professional Couch Potatoes",
    "img_id": "IMG-045",
    "page": 64,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 46,
@@ -367,7 +367,7 @@
    "category": "The Professional Couch Potatoes",
    "img_id": "IMG-046",
    "page": 65,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 47,
@@ -375,7 +375,7 @@
    "category": "The Professional Couch Potatoes",
    "img_id": "IMG-047",
    "page": 66,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 48,
@@ -383,7 +383,7 @@
    "category": "The Professional Couch Potatoes",
    "img_id": "IMG-048",
    "page": 67,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 49,
@@ -391,7 +391,7 @@
    "category": "The Professional Couch Potatoes",
    "img_id": "IMG-049",
    "page": 68,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 50,
@@ -399,7 +399,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-050",
    "page": 73,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 51,
@@ -407,7 +407,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-051",
    "page": 74,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 52,
@@ -415,7 +415,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-052",
    "page": 75,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 53,
@@ -423,7 +423,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-053",
    "page": 76,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 54,
@@ -431,7 +431,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-054",
    "page": 77,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 55,
@@ -439,7 +439,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-055",
    "page": 78,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 56,
@@ -447,7 +447,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-056",
    "page": 79,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 57,
@@ -455,7 +455,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-057",
    "page": 80,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 58,
@@ -463,7 +463,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-058",
    "page": 81,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 59,
@@ -471,7 +471,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-059",
    "page": 82,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 60,
@@ -479,7 +479,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-060",
    "page": 83,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 61,
@@ -487,7 +487,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-061",
    "page": 84,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 62,
@@ -495,7 +495,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-062",
    "page": 85,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 63,
@@ -503,7 +503,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-063",
    "page": 86,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 64,
@@ -511,7 +511,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-064",
    "page": 87,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 65,
@@ -519,7 +519,7 @@
    "category": "The Athletic Show-Offs",
    "img_id": "IMG-065",
    "page": 88,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 66,
@@ -527,7 +527,7 @@
    "category": "The Gentle Giants",
    "img_id": "IMG-066",
    "page": 92,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 67,
@@ -535,7 +535,7 @@
    "category": "The Gentle Giants",
    "img_id": "IMG-067",
    "page": 93,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 68,
@@ -543,7 +543,7 @@
    "category": "The Gentle Giants",
    "img_id": "IMG-068",
    "page": 94,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 69,
@@ -551,7 +551,7 @@
    "category": "The Gentle Giants",
    "img_id": "IMG-069",
    "page": 95,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 70,
@@ -559,7 +559,7 @@
    "category": "The Gentle Giants",
    "img_id": "IMG-070",
    "page": 96,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 71,
@@ -567,7 +567,7 @@
    "category": "The Gentle Giants",
    "img_id": "IMG-071",
    "page": 97,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 72,
@@ -575,7 +575,7 @@
    "category": "The Gentle Giants",
    "img_id": "IMG-072",
    "page": 98,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 73,
@@ -583,7 +583,7 @@
    "category": "The Gentle Giants",
    "img_id": "IMG-073",
    "page": 99,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 74,
@@ -591,7 +591,7 @@
    "category": "The Gentle Giants",
    "img_id": "IMG-074",
    "page": 100,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 75,
@@ -599,7 +599,7 @@
    "category": "The Gentle Giants",
    "img_id": "IMG-075",
    "page": 101,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 76,
@@ -607,7 +607,7 @@
    "category": "The Gentle Giants",
    "img_id": "IMG-076",
    "page": 102,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 77,
@@ -615,7 +615,7 @@
    "category": "The Gentle Giants",
    "img_id": "IMG-077",
    "page": 103,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 78,
@@ -623,7 +623,7 @@
    "category": "The Weirdest Personalities",
    "img_id": "IMG-078",
    "page": 107,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 79,
@@ -631,7 +631,7 @@
    "category": "The Weirdest Personalities",
    "img_id": "IMG-079",
    "page": 108,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 80,
@@ -639,7 +639,7 @@
    "category": "The Weirdest Personalities",
    "img_id": "IMG-080",
    "page": 109,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 81,
@@ -647,7 +647,7 @@
    "category": "The Weirdest Personalities",
    "img_id": "IMG-081",
    "page": 110,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 82,
@@ -655,7 +655,7 @@
    "category": "The Weirdest Personalities",
    "img_id": "IMG-082",
    "page": 111,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 83,
@@ -663,7 +663,7 @@
    "category": "The Weirdest Personalities",
    "img_id": "IMG-083",
    "page": 112,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 84,
@@ -671,7 +671,7 @@
    "category": "The Weirdest Personalities",
    "img_id": "IMG-084",
    "page": 113,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 85,
@@ -679,7 +679,7 @@
    "category": "The Weirdest Personalities",
    "img_id": "IMG-085",
    "page": 114,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 86,
@@ -687,7 +687,7 @@
    "category": "The Weirdest Personalities",
    "img_id": "IMG-086",
    "page": 115,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 87,
@@ -695,7 +695,7 @@
    "category": "The Weirdest Personalities",
    "img_id": "IMG-087",
    "page": 116,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 88,
@@ -703,7 +703,7 @@
    "category": "The Weirdest Personalities",
    "img_id": "IMG-088",
    "page": 117,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 89,
@@ -711,7 +711,7 @@
    "category": "The Weirdest Personalities",
    "img_id": "IMG-089",
    "page": 118,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 90,
@@ -719,7 +719,7 @@
    "category": "The Weirdest Personalities",
    "img_id": "IMG-090",
    "page": 119,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 91,
@@ -727,7 +727,7 @@
    "category": "The Dogs Who Think They Own Everything",
    "img_id": "IMG-091",
    "page": 123,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 92,
@@ -735,7 +735,7 @@
    "category": "The Dogs Who Think They Own Everything",
    "img_id": "IMG-092",
    "page": 124,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 93,
@@ -743,7 +743,7 @@
    "category": "The Dogs Who Think They Own Everything",
    "img_id": "IMG-093",
    "page": 125,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 94,
@@ -751,7 +751,7 @@
    "category": "The Dogs Who Think They Own Everything",
    "img_id": "IMG-094",
    "page": 126,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 95,
@@ -759,7 +759,7 @@
    "category": "The Dogs Who Think They Own Everything",
    "img_id": "IMG-095",
    "page": 127,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 96,
@@ -767,7 +767,7 @@
    "category": "The Dogs Who Think They Own Everything",
    "img_id": "IMG-096",
    "page": 128,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 97,
@@ -775,7 +775,7 @@
    "category": "The Dogs Who Think They Own Everything",
    "img_id": "IMG-097",
    "page": 129,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 98,
@@ -783,7 +783,7 @@
    "category": "The Dogs Who Think They Own Everything",
    "img_id": "IMG-098",
    "page": 130,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 99,
@@ -791,7 +791,7 @@
    "category": "The Dogs Who Think They Own Everything",
    "img_id": "IMG-099",
    "page": 131,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 100,
@@ -799,7 +799,7 @@
    "category": "The Dogs Who Think They Own Everything",
    "img_id": "IMG-100",
    "page": 132,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 101,
@@ -807,7 +807,7 @@
    "category": "The Dogs Who Think They Own Everything",
    "img_id": "IMG-101",
    "page": 133,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 102,
@@ -815,7 +815,7 @@
    "category": "The Dogs Who Think They Own Everything",
    "img_id": "IMG-102",
    "page": 134,
-   "has_image": false
+   "has_image": true
   },
   {
    "no": 103,
@@ -823,7 +823,7 @@
    "category": "The Dogs Who Think They Own Everything",
    "img_id": "IMG-103",
    "page": 135,
-   "has_image": false
+   "has_image": true
   }
  ]
 }

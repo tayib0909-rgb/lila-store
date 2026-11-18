@@ -18,12 +18,14 @@ A 150-page, full-color, 8.5 x 11 in paperback gift book for Amazon KDP, with 103
 ## Status
 
 - **Text and layout: complete.** No page overflows.
-- **Illustrations: not started (0 of 125).** No image generator was reachable, so each art slot prints a labeled placeholder showing its ID and art direction. Drop finished images into `images/` and rebuild.
+- **Illustrations: complete (125 of 125), in cartoon style.** The art is drawn in code by `art/dogs.py`. It gives each breed its own portrait, with breed coat colors and markings, ears, fur type, a funny expression and an accessory. It also draws the 8 chapter group scenes, 8 Christmas portraits, 4 feature scenes and the front and back cover art. The images are 1600 px JPEGs, over 300 dpi at print size.
+- **Upgrading to photo-realistic art:** generate images with the prompts in `image-prompts.md` and save them into `images/` with the same file names (for example `IMG-001.jpg`). Then rebuild.
 
 ## Rebuild
 
 ```bash
 cd books/dogs-are-weird
+python3 art/make_art.py && node art/render_svgs.js   # redraw the cartoon art (optional)
 python3 build/build.py          # interior HTML + manifest
 python3 build/build_cover.py    # cover HTML; pass standard_color for that paper
 python3 build/prompts.py        # refresh prompt pack (optional)

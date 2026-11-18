@@ -114,7 +114,7 @@ h1, h2, h3, .display { font-family: "Fraunces", serif; font-variation-settings: 
 .opener h2 { font-size: 54pt; line-height: .95; font-weight: 900; margin: .12in 0 .14in; }
 .opener .tagline { font: italic 400 17pt/1.3 "Fraunces"; opacity: .95; }
 .opener .art { margin: .3in 0; height: 4.3in; border-radius: 22px; overflow: hidden; position: relative; background: rgba(255,255,255,.12); }
-.opener .art .portrait { background: transparent; }
+.opener .art .portrait:not(.has-img) { background-color: transparent; }
 .opener .art .ph { background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.5); }
 .opener .art .ph .tag, .opener .art .ph .id { color: #fff; }
 .opener .art .ph .dir { color: rgba(255,255,255,.9); }
