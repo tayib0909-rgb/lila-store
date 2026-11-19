@@ -88,7 +88,7 @@ book.add('<div class="safe center title-page">'
 
 book.add('<div class="safe copyright" style="display:flex;flex-direction:column;justify-content:flex-end">'
          '<p><b>DOGS ARE WEIRD. WE LOVE THEM.</b><br>100+ Hilarious Dog Breeds, Crazy Personalities, Adorable Portraits &amp; Facts That Will Make You Laugh<br>Christmas Gift Edition 2027</p>'
-         '<p>Copyright © 2027 [AUTHOR / PUBLISHER NAME]. All rights reserved.</p>'
+         '<p>Copyright © 2027 Tayeb Msalem. All rights reserved.</p>'
          '<p>No part of this publication may be reproduced, distributed or transmitted in any form or by any means without the prior written permission of the publisher, except for brief quotations in reviews.</p>'
          f'<p>{e(X.DISCLAIMER)}</p>'
          '<p>All illustrations are original works created for this edition. Breed names are used descriptively; this book is not affiliated with or endorsed by any kennel club.</p>'
