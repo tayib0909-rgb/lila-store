@@ -92,7 +92,7 @@ book.add('<div class="safe copyright" style="display:flex;flex-direction:column;
          '<p>No part of this publication may be reproduced, distributed or transmitted in any form or by any means without the prior written permission of the publisher, except for brief quotations in reviews.</p>'
          f'<p>{e(X.DISCLAIMER)}</p>'
          '<p>All illustrations are original works created for this edition. Breed names are used descriptively; this book is not affiliated with or endorsed by any kennel club.</p>'
-         '<p>ISBN: [KDP-ASSIGNED OR OWN ISBN]<br>Independently published · Printed in the United States of America</p>'
+         '<p>Independently published</p>'
          '<p>First Edition, 2027</p></div>', folio=False)
 
 book.add('<div class="snow"></div><div class="safe center">'
@@ -185,7 +185,7 @@ def chapter(key, kicker, title_html, intro, body, toc_title, style=""):
 
 
 def rank_list(items, numbered=True):
-    return "".join(f'<div class="rank"><div class="n">{i if numbered else "★"}</div><div><h4>{e(a)}</h4><p>{e(b)}</p></div></div>'
+    return "".join(f'<div class="rank"><div class="n">{i if numbered else '<span class="star">★</span>'}</div><div><h4>{e(a)}</h4><p>{e(b)}</p></div></div>'
                    for i, (a, b) in enumerate(items, 1))
 
 
@@ -295,7 +295,7 @@ def ch_dating():
         name, br, age, look, likes, bio = d
         return (f'<div class="profile"><div class="top"><b>{e(name)}, {age}</b><span>{e(br)} · 0.4 miles away</span></div>'
                 f'<div class="bd"><p><em>About me</em>{e(bio)}</p><p><em>Likes</em>{e(likes)}</p><p><em>Looking for</em>{e(look.replace("Looking for: ", ""))}</p></div>'
-                f'<div class="btns"><span>✕</span><span>♥</span></div></div>')
+                f'<div class="btns"><span>×</span><span>♥</span></div></div>')
     chapter("giants", "Swipe Right", "If Your Dog Had a <em>Dating Profile</em>",
             "Love is in the air. So is fur.",
             '<div class="grid3">' + "".join(prof(d) for d in X.DATING[:3]) + "</div>"
@@ -320,7 +320,7 @@ def ch_manip():
 def ch_awards():
     chapter("weird", "Red Carpet", "The Great Dog Breed <em>Awards</em>",
             "The envelopes, please. (Don't let the Lab eat them.)",
-            '<div class="grid2">' + "".join(f'<div class="award"><div class="medal">★</div><div><h4>{e(a)}</h4><div class="who">{e(b)}</div><p>{e(c)}</p></div></div>' for a, b, c in X.AWARDS) + "</div>",
+            '<div class="grid2">' + "".join(f'<div class="award"><div class="medal"><span class="star">★</span></div><div><h4>{e(a)}</h4><div class="who">{e(b)}</div><p>{e(c)}</p></div></div>' for a, b, c in X.AWARDS) + "</div>",
             "The Great Dog Breed Awards")
 
 
@@ -386,7 +386,7 @@ quiz_pages(None, X.CHRISTMAS_QUIZ, "Which Christmas Dog Are You?", xmas=True)
 
 p = book.add('<div class="safe chapter"><div class="ch-head"><div class="kicker">Festive Honors</div>'
              '<h2 class="display">The Festive <em>Dog Awards</em></h2><p>Celebrating outstanding achievement in holiday mischief.</p></div><div class="ch-body"><div class="grid2">'
-             + "".join(f'<div class="award"><div class="medal" style="background:radial-gradient(circle at 35% 30%,#FF8A80,#B3261E 60%,#6E0F0A)">✦</div><div><h4>{e(a)}</h4><div class="who">{e(b)}</div></div></div>' for a, b in X.FESTIVE_AWARDS)
+             + "".join(f'<div class="award"><div class="medal" style="background:radial-gradient(circle at 35% 30%,#FF8A80,#B3261E 60%,#6E0F0A)"><span class="star">★</span></div><div><h4>{e(a)}</h4><div class="who">{e(b)}</div></div></div>' for a, b in X.FESTIVE_AWARDS)
              + '</div><div style="margin-top:.3in;height:3.9in;border-radius:18px;overflow:hidden;position:relative">'
              + portrait("XMAS-awards", "A Corgi in a reindeer costume accepting a tiny golden trophy on a stage with red curtains and twinkling lights", "Christmas art")
              + '</div></div></div>', cls="chapter-page", style=XS)
