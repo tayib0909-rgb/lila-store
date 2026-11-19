@@ -8,7 +8,8 @@ import json, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-AUTHOR = "[Author Name]"          # <- set before publishing
+AUTHOR = "Tayeb Msalem"
+EDITION = "Christmas Gift Edition · 2027"
 PAPER = {"premium_color": 0.002347, "standard_color": 0.002252}
 paper = sys.argv[1] if len(sys.argv) > 1 else "premium_color"
 pages = json.loads((ROOT / "build" / "manifest.json").read_text())["pages"]
@@ -18,6 +19,8 @@ spine = round(pages * PAPER[paper], 4)
 W = BLEED + TRIM_W + spine + TRIM_W + BLEED
 H = BLEED + TRIM_H + BLEED
 SAFE = 0.375  # KDP: keep text 0.375in inside trim
+FX = BLEED + TRIM_W + spine          # left edge of the front trim
+PAD = BLEED + SAFE + 0.1             # text inset from the outer bleed edge
 
 
 def img(name):
@@ -29,76 +32,104 @@ def img(name):
 
 hero = img("COVER-front")
 back_art = img("COVER-back")
-ph = lambda id_, d: (f'<div class="ph"><div class="tag">Cover art · Illustration pending</div><div class="id">{id_}</div><div class="dir">{d}</div></div>')
-
-hero_html = (f'<div class="hero" style="background-image:url(\'{hero}\')"></div>' if hero else
-             '<div class="hero">' + ph("COVER-front", "A lineup of Golden Retriever, French Bulldog, Corgi, Husky, Pug and Dachshund in cozy Christmas accessories, each with a hilarious expression, photorealistic 3D, warm golden studio light, subtle falling snow") + "</div>")
-back_html = (f'<div class="bart" style="background-image:url(\'{back_art}\')"></div>' if back_art else
-             '<div class="bart" style="margin:.18in 0">' + ph("COVER-back", "Pug in a Santa hat looking shocked at a pile of unwrapped gifts") + "</div>")
+FRONT_PHOTO_H = round((TRIM_W + BLEED) / 1.5, 3)   # full-bleed band at the image's own 3:2 shape
+BACK_PHOTO_TOP, BACK_PHOTO_H = 4.55, 4.75
+spine_pt = min(15, spine * 72 * 0.55)
 
 html = f"""<!doctype html><html lang="en-US"><head><meta charset="utf-8"><title>Dogs Are Weird Cover</title>
 <link rel="stylesheet" href="style.css"><style>
 @page {{ size: {W}in {H}in; margin: 0; }}
 html, body {{ background: #555; }}
-.wrap {{ width: {W}in; height: {H}in; position: relative; overflow: hidden;
-  background: radial-gradient(ellipse at 75% 35%, #2E6A4D 0%, #17402D 50%, #0D2619 100%); color: #FFF7E6; }}
-.snow {{ opacity: .45; }}
-.panel {{ position: absolute; top: {BLEED + SAFE}in; bottom: {BLEED + SAFE}in; }}
-.front {{ left: {BLEED + TRIM_W + spine + SAFE}in; width: {TRIM_W - 2 * SAFE}in; display: flex; flex-direction: column; align-items: center; text-align: center; }}
-.back {{ left: {BLEED + SAFE}in; width: {TRIM_W - 2 * SAFE}in; display: flex; flex-direction: column; }}
-.spine {{ position: absolute; top: 0; bottom: 0; left: {BLEED + TRIM_W}in; width: {spine}in; background: #B3261E;
-  display: flex; align-items: center; justify-content: center; }}
-.spine div {{ transform: rotate(90deg); white-space: nowrap; font: 400 {min(15, spine * 72 * 0.62):.1f}pt "Lilita"; letter-spacing: .04em; color: #fff; }}
-.spine div span {{ color: #F2D27A; }} .spine small {{ font: 600 7pt "InterB"; margin-left: .3in; letter-spacing: .1em; }}
-.badge {{ position: absolute; top: -.15in; right: -.05in; width: 1.15in; height: 1.15in; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #FF6F61, #B3261E 60%, #7A140E);
-  display: grid; place-items: center; text-align: center; font: 800 8pt/1.2 "InterB"; letter-spacing: .12em; text-transform: uppercase; color: #fff; transform: rotate(12deg);
-  box-shadow: 0 8px 24px rgba(0,0,0,.4); border: 3px dashed rgba(255,255,255,.55); }}
-.badge b {{ display: block; font: 400 22pt/1 "Lilita"; letter-spacing: 0; color: #F2D27A; }}
-.t1 {{ font: 400 74pt/.88 "Lilita"; letter-spacing: .005em; color: #fff; text-shadow: 0 4px 0 rgba(0,0,0,.25); margin-top: .15in; }}
-.t2 {{ font: 400 74pt/.88 "Lilita"; color: #F2D27A; text-shadow: 0 4px 0 rgba(0,0,0,.25); }}
-.sub {{ margin-top: .18in; background: #FFF7E6; color: #17402D; border-radius: 999px; padding: .09in .3in; font: 800 10.5pt/1.3 "InterB"; letter-spacing: .02em; max-width: 7in; }}
-.hero {{ flex: 1; width: 100%; margin-top: .22in; border-radius: 26px; background-size: cover; background-position: center; position: relative; overflow: hidden; background-color: rgba(255,255,255,.08); }}
-.ph {{ position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: .4in; border: 2px dashed rgba(255,255,255,.5); border-radius: 26px; background: rgba(255,255,255,.08); }}
-.ph .tag {{ color: #F2D27A; }} .ph .id {{ color: #fff; }} .ph .dir {{ color: rgba(255,247,230,.85); }}
-.edition {{ margin-top: .18in; font: 800 9.5pt "InterB"; letter-spacing: .32em; text-transform: uppercase; color: #F2D27A; }}
-.author {{ font: italic 500 13pt "Fraunces"; margin-top: .04in; }}
-.back h3 {{ font: 400 30pt/1 "Lilita"; color: #F2D27A; }}
-.back .lead {{ font: italic 400 13pt/1.45 "Fraunces"; margin: .14in 0 .16in; }}
-.back ul {{ list-style: none; font: 500 10.5pt/1.45 "InterB"; }}
-.back li {{ padding-left: .28in; position: relative; margin-bottom: .07in; }}
-.back li::before {{ content: "★"; position: absolute; left: 0; font-size: 11pt; color: #F2D27A; }}
-.bart {{ flex: 1; margin-bottom: 1.6in !important; border-radius: 20px; margin: .18in 0; position: relative; overflow: hidden; background-size: cover; background-position: center; }}
-.back .gift {{ font: 700 19pt "Caveat"; color: #F2D27A; }}
-.barcode {{ position: absolute; left: {BLEED + TRIM_W - 0.25 - 2}in; bottom: {BLEED + 0.25}in; width: 2in; height: 1.2in; background: #fff; border-radius: 4px; display: grid; place-items: center;
-  font: 600 6.5pt "InterB"; color: #999; letter-spacing: .1em; text-align: center; }}
-.guides .g {{ position: absolute; border: 0 dashed rgba(0,255,255,.8); }}
+:root {{ --green: #123A28; --deep: #0A2318; --gold: #E9C46A; --gold2: #F6DE9C; --cream: #FFF8EA; }}
+.wrap {{ width: {W}in; height: {H}in; position: relative; overflow: hidden; color: var(--cream);
+  background: radial-gradient(ellipse 60% 55% at 78% 22%, #1F5A3E 0%, var(--green) 55%, var(--deep) 100%); }}
+.snow {{ opacity: .32; }}
+.abs {{ position: absolute; }}
+
+/* ---------- photos ---------- */
+.photo {{ position: absolute; background-size: cover; background-position: center; }}
+.photo::after {{ content: ""; position: absolute; left: 0; right: 0; }}
+.fphoto {{ left: {FX}in; width: {TRIM_W + BLEED}in; bottom: 0; height: {FRONT_PHOTO_H}in; background-position: center 40%;
+  -webkit-mask-image: linear-gradient(transparent 0, #000 1.3in); mask-image: linear-gradient(transparent 0, #000 1.3in); }}
+.fphoto::after {{ bottom: 0; height: 1.55in; background: linear-gradient(rgba(6,22,15,0), rgba(6,22,15,.92)); }}
+.bphoto {{ left: 0; width: {BLEED + TRIM_W}in; top: {BACK_PHOTO_TOP}in; bottom: 0; background-position: 18% 45%;
+  -webkit-mask-image: linear-gradient(transparent 0, #000 1.1in); mask-image: linear-gradient(transparent 0, #000 1.1in); }}
+.bphoto::after {{ bottom: 0; height: 2.4in; background: linear-gradient(rgba(6,22,15,0), rgba(6,22,15,.9) 70%); }}
+
+/* ---------- front ---------- */
+.front {{ left: {FX + SAFE}in; width: {TRIM_W - 2 * SAFE}in; top: {BLEED + SAFE + 0.15}in; text-align: center; }}
+.kicker {{ display: flex; align-items: center; justify-content: center; gap: .16in;
+  font: 700 9.5pt "InterB"; letter-spacing: .34em; text-transform: uppercase; color: var(--gold); }}
+.kicker::before, .kicker::after {{ content: ""; height: 1px; width: .9in; background: linear-gradient(90deg, rgba(233,196,106,0), var(--gold)); }}
+.kicker::after {{ transform: scaleX(-1); }}
+.title {{ margin-top: .2in; font: 400 112pt/.86 "Lilita"; letter-spacing: .01em; color: #fff;
+  text-shadow: 0 .05in 0 rgba(0,0,0,.28), 0 .12in .35in rgba(0,0,0,.35); }}
+.love {{ margin-top: .1in; font: italic 800 60pt/1 "Fraunces"; font-variation-settings: "SOFT" 100, "WONK" 1; color: var(--gold);
+  text-shadow: 0 .04in .18in rgba(0,0,0,.35); }}
+.rule {{ width: 1.1in; height: 2px; margin: .2in auto .16in; background: var(--gold); opacity: .8; }}
+.sub {{ font: 600 13pt/1.42 "InterB"; color: var(--cream); max-width: 6.3in; margin: 0 auto; letter-spacing: .01em; }}
+.seal {{ position: absolute; left: {FX + TRIM_W - SAFE - 1.2}in; top: {H - FRONT_PHOTO_H + 0.1}in; width: 1.2in; height: 1.2in; border-radius: 50%;
+  background: radial-gradient(circle at 32% 28%, #FFF1C2 0%, var(--gold) 45%, #B8862E 100%);
+  box-shadow: 0 .08in .25in rgba(0,0,0,.45), inset 0 0 0 .05in rgba(255,255,255,.25);
+  display: grid; place-items: center; text-align: center; color: #3B2A06; }}
+.seal::before {{ content: ""; position: absolute; inset: .09in; border-radius: 50%; border: 1.2px solid rgba(59,42,6,.45); }}
+.seal b {{ display: block; font: 400 30pt/.9 "Lilita"; }}
+.seal span {{ display: block; font: 800 7pt/1.25 "InterB"; letter-spacing: .16em; text-transform: uppercase; margin-top: .03in; }}
+.author {{ position: absolute; left: {FX}in; width: {TRIM_W}in; bottom: {BLEED + SAFE + 0.05}in; text-align: center;
+  font: 700 15pt "InterB"; letter-spacing: .38em; text-transform: uppercase; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,.6); }}
+
+/* ---------- spine ---------- */
+.spine {{ position: absolute; top: 0; bottom: 0; left: {BLEED + TRIM_W}in; width: {spine}in;
+  background: linear-gradient(90deg, #08201A, #0C2A1D 50%, #08201A); display: flex; align-items: center; justify-content: center; }}
+.spine .s {{ transform: rotate(90deg); white-space: nowrap; display: flex; align-items: center; gap: .32in; }}
+.spine .t {{ font: 400 {spine_pt:.1f}pt "Lilita"; letter-spacing: .05em; color: #fff; }}
+.spine .t span {{ color: var(--gold); }}
+.spine .a {{ font: 700 {spine_pt * 0.5:.1f}pt "InterB"; letter-spacing: .28em; text-transform: uppercase; color: var(--gold2); }}
+.spine .dot {{ width: .07in; height: .07in; border-radius: 50%; background: var(--gold); }}
+
+/* ---------- back ---------- */
+.back {{ left: {PAD}in; width: {TRIM_W - 2 * SAFE - 0.2}in; top: {BLEED + SAFE + 0.15}in; }}
+.back h3 {{ font: 400 34pt/1.02 "Lilita"; color: var(--gold); letter-spacing: .005em; }}
+.back .lead {{ font: italic 400 14.5pt/1.45 "Fraunces"; margin: .17in 0 .2in; color: var(--cream); }}
+.back ul {{ list-style: none; font: 400 11.3pt/1.42 "InterB"; color: rgba(255,248,234,.95); }}
+.back li {{ padding-left: .32in; position: relative; margin-bottom: .09in; }}
+.back li b {{ font-weight: 700; color: #fff; }}
+.back li::before {{ content: "★"; position: absolute; left: 0; top: -.01in; font-size: 12.5pt; color: var(--gold); }}
+.gift {{ position: absolute; left: {PAD}in; bottom: {BLEED + SAFE + 0.05}in; width: 4.6in; }}
+.gift .c {{ font: 700 21pt/1.1 "Caveat"; color: var(--gold); }}
+.gift .n {{ margin-top: .1in; font: 700 8.5pt "InterB"; letter-spacing: .3em; text-transform: uppercase; color: rgba(255,248,234,.7); }}
+.barcode {{ position: absolute; left: {BLEED + TRIM_W - 0.25 - 2}in; bottom: {BLEED + 0.25}in; width: 2in; height: 1.2in; background: #fff; }}
 </style></head><body><div class="wrap">
 <div class="snow"></div>
-<div class="panel back">
+
+<div class="photo bphoto" style="background-image:url('{back_art}')"></div>
+<div class="abs back">
   <h3>Warning: This Book Contains Extreme Levels of Dog.</h3>
   <p class="lead">Why does the Husky argue? Why does the Frenchie act like a tiny CEO? Why does the Golden Retriever love absolutely everyone, including the vacuum?</p>
   <ul>
-    <li><b>103 real dog breeds</b> with stunning portraits, real facts and laugh-out-loud personality profiles</li>
-    <li><b>8 hilarious categories</b>, from The Drama Queens to The Dogs Who Think They Own Everything</li>
+    <li><b>103 real dog breeds</b> with photo-style portraits, real facts and laugh-out-loud personality profiles</li>
+    <li><b>8 hilarious categories,</b> from The Drama Queens to The Dogs Who Think They Own Everything</li>
     <li><b>15 comedy chapters:</b> dog dating profiles, text messages, zombie survival odds and more</li>
     <li><b>Christmas bonus:</b> festive portraits, a holiday quiz, awards and a keepsake page for your own dog</li>
   </ul>
-  {back_html}
-  <div class="gift" style="position:absolute;bottom:.15in;left:0;width:4.8in">The perfect gift for every dog lover (and every weird human).</div>
 </div>
-<div class="spine"><div>DOGS ARE WEIRD. <span>WE LOVE THEM.</span><small>{AUTHOR}</small></div></div>
-<div class="panel front">
-  <div class="badge"><div><b>2027</b>Christmas<br>Gift Edition</div></div>
-  <div class="t1">DOGS ARE WEIRD.</div>
-  <div class="t2">WE LOVE THEM.</div>
+<div class="gift"><div class="c">The perfect gift for every dog lover (and every weird human).</div><div class="n">{AUTHOR}</div></div>
+<div class="barcode"></div>
+
+<div class="spine"><div class="s"><div class="t">DOGS ARE WEIRD. <span>WE LOVE THEM.</span></div><div class="dot"></div><div class="a">{AUTHOR}</div></div></div>
+
+<div class="photo fphoto" style="background-image:url('{hero}')"></div>
+<div class="abs front">
+  <div class="kicker">{EDITION}</div>
+  <div class="title">DOGS ARE<br>WEIRD.</div>
+  <div class="love">We Love Them.</div>
+  <div class="rule"></div>
   <div class="sub">100+ Hilarious Dog Breeds, Crazy Personalities, Adorable Portraits &amp; Facts That Will Make You Laugh</div>
-  {hero_html}
-  <div class="edition">Christmas Gift Edition 2027</div>
-  <div class="author">{AUTHOR}</div>
 </div>
-<div class="barcode">BARCODE AREA<br>(KDP places ISBN barcode)<br>keep clear</div>
+<div class="seal"><div><b>103</b><span>Dog<br>Breeds</span></div></div>
+<div class="author">{AUTHOR}</div>
 </div></body></html>"""
-(ROOT / "build" / "cover.html").write_text(html)
+(ROOT / "build" / "cover.html").write_text(html, encoding="utf-8")
 spec = {"paper": paper, "pages": pages, "spine_in": spine, "cover_w_in": round(W, 4), "cover_h_in": H}
 (ROOT / "build" / "cover-spec.json").write_text(json.dumps(spec, indent=1))
 print(spec)
