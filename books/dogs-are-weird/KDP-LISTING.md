@@ -31,22 +31,28 @@ Margins: 0.75 in gutter (KDP's minimum for 151–300 pages is 0.5 in, and 0.375 
 
 Title and subtitle must match the cover word for word, which they do.
 
-### Description (paste into KDP's HTML box)
+### Description (paste into KDP's description box)
+
+Written to Amazon's description rules: under 4,000 characters; no prices, discounts, rankings or
+"bestseller" claims; no reviews, quotes or requests for reviews; no links, contact details or ads;
+no time-limited offers; no "buy now" style calls to action; and every feature listed is in the book
+(checked against the printed table of contents). Only KDP-supported HTML tags are used.
 
 ```html
 <p><b>Warning: This book contains extreme levels of dog.</b></p>
 <p>Why does the Husky argue about <i>everything</i>? Why does the French Bulldog act like a tiny, grumpy CEO? Why does the Golden Retriever love absolutely everyone, including the vacuum?</p>
-<p><b>Dogs Are Weird. We Love Them.</b> is the laugh-out-loud gift book for everyone who has ever been stared at by a dog while eating a sandwich. Inside you'll meet <b>103 real dog breeds</b>, each with a stunning full-color portrait, real facts and a hilarious personality profile.</p>
+<p><b>Dogs Are Weird. We Love Them.</b> is a laugh-out-loud gift book for anyone who has ever been stared at by a dog while eating a sandwich. Inside are <b>103 real dog breeds</b>, each with a full-color portrait, real facts and a funny personality profile.</p>
+<p><b>Inside this book:</b></p>
 <ul>
-<li><b>103 breed profiles:</b> origin and history, size, lifespan, grooming, exercise, trainability and one surprising fact</li>
-<li><b>The funny stuff:</b> "If This Dog Were a Person," "Secret Superpower" and "What This Dog Would Say If It Could Talk"</li>
-<li><b>8 ridiculous categories,</b> from The Drama Queens and The Tiny Bosses to The Professional Couch Potatoes and The Dogs Who Think They Own Everything</li>
-<li><b>15 comedy chapters:</b> dog dating profiles, text messages from dogs, the Great Dog Breed Awards, zombie-apocalypse survival odds and 10 signs your dog is manipulating you</li>
-<li><b>Christmas bonus section:</b> festive dog portraits, "Who Would Destroy the Tree First?", a Christmas personality quiz, holiday awards and heartwarming quotes</li>
-<li><b>A personal gift page</b> and a <b>keepsake page</b> for your own wonderfully weird dog</li>
+<li><b>103 breed profiles:</b> origin and history, height, weight, lifespan, grooming, exercise, trainability and a surprising fact</li>
+<li><b>Just-for-fun extras on every breed:</b> "If This Dog Were a Person," "Secret Superpower" and "If It Could Talk"</li>
+<li><b>8 breed categories,</b> from The Drama Queens and The Tiny Bosses to The Professional Couch Potatoes and The Dogs Who Think They Own Everything</li>
+<li><b>14 comedy chapters,</b> including dog dating profiles, text messages from dogs, the Great Dog Breed Awards, zombie-apocalypse survival odds and 10 signs your dog is manipulating you</li>
+<li><b>A Christmas section:</b> festive dog portraits, "Who Would Destroy the Tree First?", a Christmas dog quiz, holiday awards and heartwarming dog quotes</li>
+<li><b>A gift page</b> to write your own message, and a <b>keepsake page</b> for your own wonderfully weird dog</li>
 </ul>
-<p>It's the perfect <b>Christmas gift, stocking stuffer or birthday present</b> for dog moms, dog dads, families, teens and anyone who has ever said "Who's a good boy?" to a dog that just ate a couch cushion.</p>
-<p><b>Scroll up and grab a copy. Your dog would want you to.</b></p>
+<p>A fun gift for dog moms, dog dads, families, teens and anyone who has ever said "Who's a good boy?" to a dog that just ate a couch cushion.</p>
+<p><i>Breed facts are general guides, not veterinary advice. Images in this book were created with the help of AI tools.</i></p>
 ```
 
 ### 7 keyword slots (each under 50 characters)

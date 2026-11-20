@@ -109,7 +109,7 @@ html, body {{ background: #555; }}
   <ul>
     <li><b>103 real dog breeds</b> with photo-style portraits, real facts and laugh-out-loud personality profiles</li>
     <li><b>8 hilarious categories,</b> from The Drama Queens to The Dogs Who Think They Own Everything</li>
-    <li><b>15 comedy chapters:</b> dog dating profiles, text messages, zombie survival odds and more</li>
+    <li><b>14 comedy chapters:</b> dog dating profiles, text messages, zombie survival odds and more</li>
     <li><b>Christmas bonus:</b> festive portraits, a holiday quiz, awards and a keepsake page for your own dog</li>
   </ul>
 </div>
