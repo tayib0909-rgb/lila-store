@@ -22,9 +22,14 @@ Margins: 0.75 in gutter (KDP's minimum for 151–300 pages is 0.5 in, and 0.375 
 
 **Title:** Dogs Are Weird. We Love Them.
 **Subtitle:** 100+ Hilarious Dog Breeds, Crazy Personalities, Adorable Portraits & Facts That Will Make You Laugh
-**Edition:** Christmas Gift Edition 2027. Enter this in KDP's *Edition* field, not in the title, or KDP may flag the listing.
+**Author:** Tayeb Msalem
+**Edition number:** leave blank (KDP's field takes a number only). "Christmas Gift Edition 2027" stays on the cover and title page; don't add it to the title or subtitle, or KDP may flag the listing.
 **Language:** English
 **Reading age:** 12 and up
+**Primary audience:** no sexually explicit content; not a low-content book
+**AI-generated content:** Yes, images (Canva Dream Lab and Bing Image Creator); text as written
+
+Title and subtitle must match the cover word for word, which they do.
 
 ### Description (paste into KDP's HTML box)
 
@@ -49,16 +54,18 @@ Margins: 0.75 in gutter (KDP's minimum for 151–300 pages is 0.5 in, and 0.375 
 1. funny dog gifts for dog lovers
 2. dog breed book with pictures for adults
 3. christmas gift for dog mom
-4. dog lover coffee table book funny
-5. white elephant gift for dog owners
-6. stocking stuffer for teens and adults dogs
-7. gift for dog dad who has everything
+4. gift for dog dad who has everything
+5. funny coffee table book about dogs
+6. white elephant gift for dog owners
+7. stocking stuffer for adults and teens
 
-### Category suggestions (choose 3 in KDP)
+### Categories (KDP lets you pick 3)
 
-- Humor > Topic > Animals
-- Pets > Dogs > Breeds
-- Crafts, Hobbies & Home > Pets (or Nonfiction > Gift books, if available)
+1. Humor > Topic > Animals
+2. Pets > Dogs > Breeds
+3. Humor > Form > Pictorial
+
+Backup if one isn't offered: Pets > Dogs > General.
 
 ### Pricing guidance
 
@@ -66,9 +73,10 @@ At 150 premium-color pages, KDP's printing cost is roughly $9–$10 per copy in 
 
 ## Before you press Publish: checklist
 
-- [ ] All 125 illustrations generated, checked and placed in `images/` (see `image-prompts.md`), then rebuilt
-- [ ] `AUTHOR` set in `build/build_cover.py`; author and publisher name filled in on the copyright page (`build/build.py`)
-- [ ] ISBN: use KDP's free ISBN or your own; add it to the copyright page
+- [x] All 125 illustrations generated, checked and placed in `images/` (see `image-prompts.md`), then rebuilt
+- [x] Author (Tayeb Msalem) on the cover, spine and copyright page
+- [x] KDP file preflight: sizes, margins, spine, barcode area, 300 dpi images, TrueType fonts, no placeholders
+- [ ] ISBN: use KDP's free ISBN (KDP prints it in the barcode; the copyright page doesn't need it)
 - [ ] AI-content disclosure answered **Yes** for images (required by KDP when AI generated the art)
 - [ ] Download KDP's print previewer report and fix any flags
 - [ ] Order one printed proof copy and check color, gutter and spine alignment
