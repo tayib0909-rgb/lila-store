@@ -1,0 +1,102 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Dogs Are Weird Video Ad</title>
+<style>
+@font-face { font-family: Lilita; src: url("../build/fonts/lilita-one-latin-400-normal.woff2"); }
+@font-face { font-family: Fraunces; src: url("../build/fonts/fraunces-latin-full-italic.woff2"); font-style: italic; font-weight: 100 900; }
+@font-face { font-family: InterB; src: url("../build/fonts/Inter-Bold.otf"); font-weight: 700; }
+@font-face { font-family: InterB; src: url("../build/fonts/Inter-ExtraBold.otf"); font-weight: 800; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1920px; height: 1080px; overflow: hidden; background: #0E2A1D; }
+#stage { position: relative; width: 1920px; height: 1080px; overflow: hidden;
+  background: radial-gradient(ellipse at 30% 40%, #2B6A4B 0%, #17402D 55%, #0B2318 100%); }
+.snow { position: absolute; inset: -200px 0 0 0; opacity: .35;
+  background-image: radial-gradient(circle, #fff 2px, transparent 2.6px), radial-gradient(circle, rgba(255,255,255,.7) 1.4px, transparent 2px);
+  background-size: 90px 90px, 55px 55px; background-position: 0 0, 20px 35px; }
+.scene { position: absolute; inset: 0; opacity: 0; }
+.photo { position: absolute; top: 90px; right: 110px; width: 900px; height: 900px; border-radius: 36px; overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0,0,0,.55); border: 8px solid #F2D27A; }
+.photo img { width: 100%; height: 100%; object-fit: cover; transform-origin: 50% 40%; }
+.txt { position: absolute; left: 110px; top: 0; bottom: 0; width: 760px; display: flex; flex-direction: column; justify-content: center; }
+.kick { font: 800 30px InterB; letter-spacing: .22em; color: #F2D27A; text-transform: uppercase; margin-bottom: 26px; }
+.big { font: 400 118px/0.98 Lilita; color: #fff; text-shadow: 0 6px 0 rgba(0,0,0,.25); }
+.big em { font-style: normal; color: #F2D27A; }
+.sub { font: italic 600 46px/1.25 Fraunces; color: #FFF4DA; margin-top: 30px; }
+.grid { position: absolute; top: 300px; left: 110px; right: 110px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 26px; }
+.grid div { aspect-ratio: 1; border-radius: 24px; overflow: hidden; border: 6px solid #F2D27A; box-shadow: 0 16px 40px rgba(0,0,0,.45); }
+.grid img { width: 100%; height: 100%; object-fit: cover; }
+.gtitle { position: absolute; top: 90px; left: 0; right: 0; text-align: center; font: 400 104px Lilita; color: #fff; }
+.gtitle em { font-style: normal; color: #F2D27A; }
+.gsub { position: absolute; bottom: 120px; left: 0; right: 0; text-align: center; font: 800 46px InterB; color: #FFF4DA; letter-spacing: .04em; }
+.gsub b { color: #F2D27A; }
+.book { position: absolute; left: 170px; top: 70px; height: 940px; aspect-ratio: 8.5 / 11; border-radius: 6px 18px 18px 6px; overflow: hidden;
+  box-shadow: -14px 0 0 #0E2A1D inset, 0 40px 90px rgba(0,0,0,.6), 0 0 0 2px rgba(255,255,255,.08); }
+.book img { width: 100%; height: 100%; object-fit: cover; }
+.book::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.35) 0, rgba(255,255,255,.12) 3%, transparent 8%); }
+.end { position: absolute; left: 1040px; right: 90px; top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; }
+.end .t1 { font: 400 112px/0.95 Lilita; color: #fff; }
+.end .t2 { font: italic 800 84px/1.05 Fraunces; color: #F2D27A; margin-top: 8px; }
+.end .t3 { font: 800 38px/1.35 InterB; color: #FFF4DA; margin-top: 40px; }
+.pill { margin-top: 46px; align-self: flex-start; background: #F2D27A; color: #17402D; font: 800 40px InterB; padding: 22px 44px; border-radius: 999px; box-shadow: 0 12px 30px rgba(0,0,0,.35); }
+</style></head>
+<body><div id="stage">
+<div class="snow" id="snow"></div>
+
+<div class="scene" id="s1">
+  <div class="photo"><img src="../images/IMG-002.jpg"></div>
+  <div class="txt"><div class="kick">Dog owners, be honest</div><div class="big">Is your dog<br><em>…weird?</em></div></div>
+</div>
+<div class="scene" id="s2">
+  <div class="photo"><img src="../images/IMG-014.jpg"></div>
+  <div class="txt"><div class="kick">The French Bulldog</div><div class="big">Runs the house like a <em>tiny CEO.</em></div></div>
+</div>
+<div class="scene" id="s3">
+  <div class="photo"><img src="../images/IMG-001.jpg"></div>
+  <div class="txt"><div class="kick">The Siberian Husky</div><div class="big">Argues about <em>EVERYTHING.</em></div></div>
+</div>
+<div class="scene" id="s4">
+  <div class="gtitle">103 Breeds. <em>Zero Chill.</em></div>
+  <div class="grid">
+    <div><img src="../images/IMG-050.jpg"></div><div><img src="../images/IMG-091.jpg"></div><div><img src="../images/IMG-016.jpg"></div>
+    <div><img src="../images/IMG-092.jpg"></div><div><img src="../images/IMG-013.jpg"></div><div><img src="../images/IMG-026.jpg"></div>
+  </div>
+  <div class="gsub">Real facts <b>·</b> Hilarious profiles <b>·</b> Stunning portraits</div>
+</div>
+<div class="scene" id="s5">
+  <div class="book"><img src="front.png"></div>
+  <div class="end">
+    <div class="t1">DOGS ARE WEIRD.</div>
+    <div class="t2">We Love Them.</div>
+    <div class="t3">The perfect Christmas gift<br>for every dog lover.</div>
+    <div class="pill">Available now in paperback</div>
+  </div>
+</div>
+</div>
+<script>
+const S = [["s1",0,3.1],["s2",3,5.7],["s3",5.6,8.3],["s4",8.2,11.0],["s5",10.9,15.01]];
+const cl = x => Math.max(0, Math.min(1, x));
+const ease = x => 1 - Math.pow(1 - cl(x), 3);
+window.setT = t => {
+  document.getElementById('snow').style.transform = `translateY(${(t * 40) % 90}px)`;
+  for (const [id, a, b] of S) {
+    const el = document.getElementById(id);
+    const fin = a === 0 ? 1 : cl((t - a) / 0.35), fout = b > 15 ? 1 : cl((b - t) / 0.35);
+    el.style.opacity = Math.min(fin, fout);
+    const p = cl((t - a) / (b - a)), e = ease((t - a) / 0.6);
+    const img = el.querySelector('.photo img'); if (img) img.style.transform = `scale(${1.04 + 0.08 * p})`;
+    const ph = el.querySelector('.photo'); if (ph) ph.style.transform = `translateX(${(1 - e) * 120}px)`;
+    el.querySelectorAll('.txt > *, .end > *').forEach((n, i) => {
+      const k = ease((t - a - 0.12 - i * 0.12) / 0.5);
+      n.style.opacity = k; n.style.transform = `translateY(${(1 - k) * 50}px)`;
+    });
+    el.querySelectorAll('.grid > div').forEach((n, i) => {
+      const k = ease((t - a - 0.1 - i * 0.1) / 0.45);
+      n.style.opacity = k; n.style.transform = `scale(${0.7 + 0.3 * k})`;
+    });
+    const gt = el.querySelector('.gtitle'); if (gt) { const k = ease((t - a) / 0.5); gt.style.opacity = k; gt.style.transform = `translateY(${(1 - k) * -40}px)`; }
+    const gs = el.querySelector('.gsub'); if (gs) { const k = ease((t - a - 0.8) / 0.5); gs.style.opacity = k; }
+    const bk = el.querySelector('.book'); if (bk) { const k = ease((t - a) / 0.7); bk.style.transform = `translateY(${(1 - k) * 60}px) rotate(${(1 - k) * -4}deg) scale(${0.96 + 0.04 * k + 0.02 * p})`; }
+    const pill = el.querySelector('.pill'); if (pill && t > a + 1.2) pill.style.transform = `scale(${1 + 0.03 * Math.sin((t - a) * 5)})`;
+  }
+};
+setT(0);
+</script></body></html>
