@@ -1,6 +1,6 @@
 # Dogs Are Weird. We Love Them. (Christmas Gift Edition 2027)
 
-A 150-page, full-color, 8.5 x 11 in paperback gift book for Amazon KDP, with 103 dog breeds, 15 comedy chapters and a Christmas section.
+A 150-page, full-color, 8.5 x 11 in paperback gift book for Amazon KDP, with 103 dog breeds, 14 comedy chapters and a Christmas section.
 
 ## What's here
 
